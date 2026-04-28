@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Operations, Work Orders and Collections - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="growth.html">Growth</a><a href="cases.html">Cases</a><a class="active" href="field-ops.html">Field Ops</a><a href="knowledge.html">Knowledge</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="access.html">Access</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="sectors.html">Sectors</a><a href="portal.html">Portal</a><a href="story-map.html">Story Map</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Field Ops</div>
+        <div class="top-actions"><span class="status-dot"></span> Appointments, work orders, inspections, billing, and visits represented</div>
+      </div>
+      <div class="top-actions"><span>Service Operator</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Field Operations, Work Orders and Collections</h1><p class="lead">The promoted screen estate includes operational delivery outside the desk: appointment scheduling, work order queues, inspections, billing coordination, collections, and TRD visit execution.</p></div>
+        <div class="toolbar"><a class="button primary" href="#work-orders">Open work orders</a><a class="button " href="#visits">Visit execution</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#appointments">Appointments</a><a href="#work-orders">Work orders</a><a href="#inspections">Inspections</a><a href="#billing">Billing</a><a href="#visits">Visits</a><a href="#handoff">Handoff</a></nav>
+      <section class="kpis"><div class="kpi"><div class="label">Appointments today</div><div class="value">64</div><span class="badge info">SCR-051</span></div><div class="kpi"><div class="label">Open work orders</div><div class="value">118</div><span class="badge warning">SCR-052</span></div><div class="kpi"><div class="label">Inspection blocks</div><div class="value">9</div><span class="badge critical">evidence</span></div><div class="kpi"><div class="label">Collection tasks</div><div class="value">31</div><span class="badge info">M38</span></div></section>
+      <section id="appointments" class="panel page-section">
+        <div class="section-title"><div><h2>Appointment Schedule View</h2><p>SCR-051. Scheduling is a queue with capacity, channel, customer, and dependency state.</p></div><span class="badge info">M35</span></div>
+        <table><thead><tr><th>Slot</th><th>Customer</th><th>Reason</th><th>Channel</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td>09:30</td><td>Amina Bello</td><td>KYC document review</td><td>Branch</td><td><span class="badge warning">Proof pending</span></td><td><a href="onboarding.html#documents">Open documents</a></td></tr><tr><td>11:00</td><td>Kano Traders Ltd</td><td>Facility proposal</td><td>Phone</td><td><span class="badge success">Confirmed</span></td><td><a href="growth.html#opportunity">Open opportunity</a></td></tr></tbody></table>
+      </section>
+      <section id="work-orders" class="panel page-section">
+        <div class="section-title"><div><h2>Work Order Queue</h2><p>SCR-052. Work orders are owned, prioritized, SLA-tracked, and linked to customer/case context.</p></div><span class="badge warning">M36</span></div>
+        <table><thead><tr><th>Work order</th><th>Linked object</th><th>Task</th><th>Owner</th><th>SLA</th><th>Next action</th></tr></thead><tbody><tr><td class="mono">WO-3310</td><td><a href="cases.html#case-detail">CASE-1048</a></td><td>Collect transaction evidence</td><td>Service Operator</td><td><span class="badge warning">4h</span></td><td><a href="#handoff">Handoff</a></td></tr><tr><td class="mono">WO-3304</td><td><a href="onboarding.html#journey-detail">ONB-8830</a></td><td>Verify director identity</td><td>Branch Officer</td><td><span class="badge critical">Blocked</span></td><td><a href="access.html#identity">Resolve identity</a></td></tr></tbody></table>
+      </section>
+      <section id="inspections" class="detail-layout page-section">
+        <div class="panel">
+          <div class="record-header"><div><span class="mono">INSP-902</span><h2>Inspection and Assessment Engine View</h2><p>SCR-053. Field inspection detail with checklist, photos, risk notes, and evidence bundle.</p></div><span class="badge warning">Evidence review</span></div>
+          <div class="mini-grid"><div><span class="label">Inspector</span><strong>Assigned</strong></div><div><span class="label">Checklist</span><strong>7 of 9 complete</strong></div><div><span class="label">Evidence</span><strong>2 files missing</strong></div><div><span class="label">Risk</span><strong>Medium</strong></div></div>
+          <div class="checklist"><label><input type="checkbox" checked> Customer location verified</label><label><input type="checkbox" checked> Asset condition photographed</label><label><input type="checkbox"> Supervisor exception note attached</label><label><input type="checkbox"> Customer sign-off captured</label></div>
+        </div>
+        <aside class="panel sticky-card"><h2>Governance</h2><div class="banner critical"><strong>Submission blocked</strong><span>Inspection cannot complete until missing evidence is attached.</span></div><a class="button primary" href="approvals.html#evidence-drawer">Review bundle</a></aside>
+      </section>
+      <section id="billing" class="panel page-section">
+        <div class="section-title"><div><h2>Billing and Collections Coordination Queue</h2><p>SCR-054. Xplorer coordinates billing issues and collections work but does not become the financial ledger.</p></div><span class="badge info">M38</span></div>
+        <table><thead><tr><th>Item</th><th>Customer</th><th>Source system</th><th>Coordination state</th><th>Customer communication</th><th>Action</th></tr></thead><tbody><tr><td class="mono">BILL-771</td><td>Amina Bello</td><td>Core billing</td><td><span class="badge warning">Disputed</span></td><td>Consent-gated SMS</td><td><a href="cases.html#new-case">Create case</a></td></tr><tr><td class="mono">COL-218</td><td>Retail portfolio</td><td>Collections platform</td><td><span class="badge info">Reminder queue</span></td><td>Do-not-disturb checked</td><td><a href="access.html#channel">Channel check</a></td></tr></tbody></table>
+      </section>
+      <section id="visits" class="panel page-section">
+        <div class="section-title"><div><h2>Trade/Retail/Distribution Visit Execution</h2><p>SCR-061, SCR-062, SCR-063. TRD field reps execute a visit checklist, submit visit forms, and receive confirmation.</p></div><span class="badge info">M41</span></div>
+        <div class="flow-steps"><div class="step active"><strong>Checklist</strong><span>Store visit plan and prerequisites</span></div><div class="step active"><strong>Execute</strong><span>Capture stock, display, order, and issue fields</span></div><div class="step"><strong>Submit</strong><span>Attach evidence and location proof</span></div><div class="step"><strong>Confirm</strong><span>Write visit outcome and next action</span></div></div>
+        <table><thead><tr><th>Visit</th><th>Outlet</th><th>Checklist state</th><th>Submission</th><th>Next action</th></tr></thead><tbody><tr><td class="mono">VIS-914</td><td>Surulere Distributor</td><td><span class="badge warning">2 missing</span></td><td>Draft</td><td><a href="#inspections">Attach inspection evidence</a></td></tr><tr><td class="mono">VIS-908</td><td>Kano Retailer</td><td><span class="badge success">Complete</span></td><td>Submitted</td><td><a href="sectors.html#trd">Open TRD authority</a></td></tr></tbody></table>
+      </section>
+      <section id="handoff" class="panel page-section">
+        <div class="section-title"><h2>Desk-to-Field Handoff</h2><span class="badge success">Traceable</span></div>
+        <div class="flow-steps"><div class="step active"><strong>1. Queue</strong><span>Appointment or work order accepted.</span></div><div class="step active"><strong>2. Evidence</strong><span>Field proof attached.</span></div><div class="step"><strong>3. Exception</strong><span>Blocked items route to approval or case.</span></div><div class="step"><strong>4. Outcome</strong><span>Customer, case, billing, or visit state updated.</span></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

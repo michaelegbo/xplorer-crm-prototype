@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knowledge and Guided Procedures - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="growth.html">Growth</a><a href="cases.html">Cases</a><a href="field-ops.html">Field Ops</a><a class="active" href="knowledge.html">Knowledge</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="access.html">Access</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="sectors.html">Sectors</a><a href="portal.html">Portal</a><a href="story-map.html">Story Map</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Knowledge</div>
+        <div class="top-actions"><span class="status-dot"></span> Knowledge browse, article, procedure, and AI-assisted search represented</div>
+      </div>
+      <div class="top-actions"><span>Service Operator</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Knowledge and Guided Procedures</h1><p class="lead">The source documents include a dedicated Knowledge & Guidance module, so service staff need a clear place to browse articles, follow procedures, and inspect AI-assisted search results.</p></div>
+        <div class="toolbar"><a class="button primary" href="#search">Search knowledge</a><a class="button " href="#procedure">Guided procedure</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#browse">Browse</a><a href="#article">Article</a><a href="#procedure">Procedure</a><a href="#search">AI search</a><a href="#feedback">Feedback</a></nav>
+      <section id="browse" class="panel page-section">
+        <div class="section-title"><div><h2>Knowledge Base Browse</h2><p>SCR-064. Browse starts with categories, tags, affected journeys, and publish state.</p></div><span class="badge info">M08</span></div>
+        <table><thead><tr><th>Article</th><th>Category</th><th>Applies to</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td>BVN degraded mode handling</td><td>Connector recovery</td><td>Onboarding, cases</td><td><span class="badge success">Published</span></td><td><a href="#article">Open</a></td></tr><tr><td>Corporate KYC missing item rules</td><td>Onboarding</td><td>Branch Officer</td><td><span class="badge success">Published</span></td><td><a href="onboarding.html#missing-items">Use in journey</a></td></tr><tr><td>Sensitive reveal rationale examples</td><td>Approvals</td><td>Compliance Officer</td><td><span class="badge warning">Review pending</span></td><td><a href="approvals.html#decision-form">Approval context</a></td></tr></tbody></table>
+      </section>
+      <section id="article" class="detail-layout page-section">
+        <div class="panel">
+          <div class="record-header"><div><span class="mono">KNOW-118</span><h2>Knowledge Article Detail</h2><p>SCR-065. Operators can inspect content, status, related screens, and governance warnings.</p></div><span class="badge success">Published</span></div>
+          <h3>BVN degraded mode handling</h3>
+          <p>When BVN verification is degraded, onboarding and identity-sensitive case workflows must show stale-source warnings, route recovery to the integration gateway, and prevent the stale result from being treated as verified business truth.</p>
+          <div class="banner info"><strong>Related source controls</strong><span>Persistent degraded banner, connector recovery confirmation, and evidence continuity.</span></div>
+        </div>
+        <aside class="panel sticky-card"><h2>Linked Screens</h2><div class="status-list"><div><span>Integration Health</span><a href="integration.html#health">SCR-004</a></div><div><span>Degraded Banner</span><a href="integration.html#degraded">SCR-094</a></div><div><span>Onboarding KYC</span><a href="onboarding.html#wizard">SCR-041</a></div></div></aside>
+      </section>
+      <section id="procedure" class="panel page-section">
+        <div class="section-title"><div><h2>Guided Procedure Surface</h2><p>SCR-066. Procedure steps keep recovery actions consistent across service and onboarding teams.</p></div><span class="badge warning">Step controlled</span></div>
+        <div class="flow-steps"><div class="step active"><strong>1. Confirm stale source</strong><span>Read connector timestamp.</span></div><div class="step active"><strong>2. Explain impact</strong><span>Show affected workflows.</span></div><div class="step"><strong>3. Route recovery</strong><span>Open integration recovery.</span></div><div class="step"><strong>4. Resume work</strong><span>Continue only after safe path.</span></div></div>
+      </section>
+      <section id="search" class="panel page-section">
+        <div class="section-title"><div><h2>AI-Assisted Search Result View</h2><p>SCR-067. Search can rank useful content, but it remains advisory and cites the source article or procedure.</p></div><span class="badge info">Advisory</span></div>
+        <div class="filters"><div class="field"><label>Search</label><input class="input" value="BVN verification stale during onboarding"></div><div class="field"><label>Scope</label><select class="select"><option>Approved knowledge only</option></select></div><div class="field"><label>Workflow</label><select class="select"><option>Onboarding</option><option>Case recovery</option></select></div></div>
+        <table><thead><tr><th>Result</th><th>Confidence</th><th>Source</th><th>Boundary</th><th>Action</th></tr></thead><tbody><tr><td>BVN degraded mode handling</td><td><span class="badge success">High</span></td><td>Published article</td><td>Cannot approve manual override</td><td><a href="#article">Open article</a></td></tr><tr><td>Connector recovery confirmation</td><td><span class="badge info">Medium</span></td><td>Procedure</td><td>Route to integration admin</td><td><a href="integration.html#recovery">Open recovery</a></td></tr></tbody></table>
+      </section>
+      <section id="feedback" class="panel page-section">
+        <div class="section-title"><h2>Knowledge Feedback and Gap Capture</h2><span class="badge info">Continuous improvement</span></div>
+        <div class="form-grid"><div class="field"><label>Gap type</label><select class="select"><option>Article missing</option><option>Procedure unclear</option><option>Policy update needed</option></select></div><div class="field"><label>Related workflow</label><select class="select"><option>Onboarding</option><option>Cases</option><option>Approvals</option></select></div><div class="field wide"><label>Feedback</label><textarea class="textarea">Add a branch-specific checklist for manual BVN fallback.</textarea></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sector Authorities and Sector Pack Governance - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="growth.html">Growth</a><a href="cases.html">Cases</a><a href="field-ops.html">Field Ops</a><a href="knowledge.html">Knowledge</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="access.html">Access</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a class="active" href="sectors.html">Sectors</a><a href="portal.html">Portal</a><a href="story-map.html">Story Map</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Sectors</div>
+        <div class="top-actions"><span class="status-dot"></span> Sector overlays, pack authoring, promotion, and TRD active screens represented</div>
+      </div>
+      <div class="top-actions"><span>Sector Pack Author</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Sector Authorities and Sector Pack Governance</h1><p class="lead">The Blueprint defines sector-configurable CRM behavior. The active screen estate includes sector pack registry, manifest review, authoring, staging validation, promotion history, and TRD visit execution screens.</p></div>
+        <div class="toolbar"><a class="button primary" href="#registry">Open registry</a><a class="button " href="#trd">TRD overlay</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#authority">Authority model</a><a href="#registry">Registry</a><a href="#manifest">Manifest</a><a href="#authoring">Authoring</a><a href="#validation">Validation</a><a href="#history">History</a><a href="#trd">TRD active screens</a></nav>
+      <section id="authority" class="panel page-section">
+        <div class="section-title"><div><h2>Sector Authority Model</h2><p>Blueprint layer: shared platform foundation, Nigeria universal overlay, sector authorities, and tenant conformance runtime.</p></div><span class="badge info">Source reviewed</span></div>
+        <table><thead><tr><th>Sector authority</th><th>Screen posture</th><th>Prototype treatment</th><th>Why it matters</th></tr></thead><tbody><tr><td>Financial Services</td><td>Approved module with no dedicated active primary screen in the summary extract</td><td>Controls appear across onboarding, approvals, reports, AI, and tenant runtime</td><td>Regulated KYC, evidence, consent, export, and maker-checker behavior</td></tr><tr><td>ICT and Telecommunications</td><td>Approved module with no dedicated active primary screen in the summary extract</td><td>Represented as overlay rules, channel posture, and tenant configuration</td><td>Sector wording, thresholds, notification and complaint patterns</td></tr><tr><td>Trade, Retail and Distribution</td><td>Three active screens</td><td>Visit execution shown here and in Field Ops</td><td>Field activity, outlet visits, order signals, and checklist-based execution</td></tr></tbody></table>
+      </section>
+      <section id="registry" class="panel page-section">
+        <div class="section-title"><div><h2>Sector Pack Registry</h2><p>SCR-105. Intake owners see sector packs, ownership, lifecycle state, tenant bindings, and promotion readiness.</p></div><span class="badge info">ARCH-LIST</span></div>
+        <table><thead><tr><th>Pack</th><th>Sector</th><th>Owner</th><th>Lifecycle</th><th>Tenant bindings</th><th>Action</th></tr></thead><tbody><tr><td class="mono">SP-FSI-BASE</td><td>Financial Services</td><td>Product Owner</td><td><span class="badge success">Active</span></td><td>GoTech pilot</td><td><a href="#manifest">Manifest</a></td></tr><tr><td class="mono">SP-TEL-DRAFT</td><td>ICT and Telecommunications</td><td>Sector Author</td><td><span class="badge warning">Draft</span></td><td>None</td><td><a href="#authoring">Author</a></td></tr><tr><td class="mono">SP-TRD-VISIT</td><td>Trade/Retail/Distribution</td><td>TRD Steward</td><td><span class="badge info">Staging</span></td><td>2 tenants</td><td><a href="#trd">TRD screens</a></td></tr></tbody></table>
+      </section>
+      <section id="manifest" class="detail-layout page-section">
+        <div class="panel">
+          <div class="record-header"><div><span class="mono">SCR-106</span><h2>Sector Pack Detail - Manifest Review</h2><p>Manifest review checks modules, screens, interaction surfaces, policies, wording, thresholds, and tenant impact before authoring/promotion.</p></div><span class="badge warning">Review</span></div>
+          <div class="mini-grid"><div><span class="label">Screens</span><strong>8 mapped</strong></div><div><span class="label">Policies</span><strong>14 rules</strong></div><div><span class="label">Field matrix</span><strong>Exception open</strong></div><div><span class="label">Promotion</span><strong>Checker required</strong></div></div>
+        </div>
+        <aside class="panel sticky-card"><h2>Manifest Checks</h2><div class="status-list"><div><span>Shared controls untouched</span><span class="badge success">Pass</span></div><div><span>Field/screen density</span><span class="badge warning">Open exception</span></div><div><span>Tenant impact diff</span><span class="badge info">Required</span></div></div></aside>
+      </section>
+      <section id="authoring" class="panel page-section">
+        <div class="section-title"><div><h2>Sector Pack Authoring Workspace</h2><p>SCR-107. Authors change sector wording, thresholds, requirement rules, and screen bindings inside the governed envelope.</p></div><span class="badge warning">ARCH-CONFIG</span></div>
+        <div class="form-grid"><div class="field"><label>Pack</label><select class="select"><option>SP-TEL-DRAFT</option><option>SP-TRD-VISIT</option></select></div><div class="field"><label>Change type</label><select class="select"><option>Sector wording</option><option>Threshold</option><option>Required evidence</option><option>Screen binding</option></select></div><div class="field wide"><label>Author note</label><textarea class="textarea">Add telecom complaint escalation wording without changing shared approval semantics.</textarea></div></div>
+      </section>
+      <section id="validation" class="panel page-section">
+        <div class="section-title"><div><h2>Sector Pack Staging Validation</h2><p>SCR-108. QA validates workflow, screen, permission, evidence, notification, and AI-policy impact before promotion.</p></div><span class="badge critical">Gate</span></div>
+        <table><thead><tr><th>Validation area</th><th>State</th><th>Issue</th><th>Owner</th></tr></thead><tbody><tr><td>Workflow transition</td><td><span class="badge success">Pass</span></td><td>None</td><td>QA Lead</td></tr><tr><td>Field matrix coverage</td><td><span class="badge warning">Open</span></td><td>Screen densification exception</td><td>Design/Product</td></tr><tr><td>AI policy binding</td><td><span class="badge success">Pass</span></td><td>Advisory-only boundary preserved</td><td>AI Governance</td></tr></tbody></table>
+      </section>
+      <section id="history" class="panel page-section">
+        <div class="section-title"><div><h2>Sector Pack Promotion History</h2><p>SCR-109. Promotion history records author, checker, release, rollback posture, and tenant impact.</p></div><span class="badge info">Audit</span></div>
+        <table><thead><tr><th>Version</th><th>Decision</th><th>Checker</th><th>Release</th><th>Evidence</th></tr></thead><tbody><tr><td class="mono">SP-FSI-BASE v1.2</td><td><span class="badge success">Promoted</span></td><td>Release Authority</td><td>R1</td><td><a href="approvals.html#evidence-drawer">Bundle</a></td></tr><tr><td class="mono">SP-TRD-VISIT v0.9</td><td><span class="badge warning">Staged</span></td><td>Pending</td><td>R1 candidate</td><td><a href="#validation">Validation</a></td></tr></tbody></table>
+      </section>
+      <section id="trd" class="panel page-section">
+        <div class="section-title"><div><h2>TRD Active Visit Screens</h2><p>SCR-061, SCR-062, SCR-063 are the active dedicated screens for the Trade/Retail/Distribution sector authority.</p></div><span class="badge success">Active screens</span></div>
+        <div class="flow-steps"><div class="step active"><strong>SCR-061 Checklist</strong><span>Visit plan, outlet, prerequisites.</span></div><div class="step active"><strong>SCR-062 Execute</strong><span>Capture execution fields.</span></div><div class="step"><strong>SCR-063 Confirmation</strong><span>Submit and confirm outcome.</span></div><div class="step"><strong>Back office</strong><span>Route exceptions to cases or approvals.</span></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>
