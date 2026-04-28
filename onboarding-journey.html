@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a class="active" href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-commercial.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Commercial and Onboarding Operator<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Commercial and Onboarding Operator<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Commercial &amp; Onboarding / Onboarding Journey Detail</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Commercial &amp; Onboarding / Onboarding Journey Detail</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Commercial &amp; Onboarding</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,29 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-048 / SCR-049</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M07 Onboarding Engine</td><td><a href="role-commercial.html">Commercial and Onboarding Operator</a></td><td>Journey detail with KYC state, activation handoff, connector freshness, consent, missing items, and approval readiness.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Onboarding Journey Detail</h2><span class="chip info">Queue</span></div>
+    <div class="filters">
+      <label><span>Search</span><input value="Kano"></label>
+      <label><span>Status</span><select><option>All active</option><option>Blocked</option><option>Waiting</option></select></label>
+      <label><span>Owner</span><select><option>My queue</option><option>Team queue</option></select></label>
+    </div>
+    <table><thead><tr><th>Reference</th><th>Customer</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">OJD-2180</span></td><td>Amina Bello</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="onboarding-wizard.html">Open</a></td></tr><tr><td><span class="mono">OJD-2181</span></td><td>Kano Traders Ltd</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="onboarding-documents.html">Open</a></td></tr><tr><td><span class="mono">OJD-2182</span></td><td>Northline Services</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="approval-detail.html">Open</a></td></tr><tr><td><span class="mono">OJD-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="onboarding-wizard.html">Open</a></td></tr></tbody></table>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Selected Record Preview</h2><span class="chip info">REC-4821</span></div>
+    <div class="preview-grid">
+      <div><span>Customer</span><strong>Kano Traders Ltd</strong></div>
+      <div><span>Owner</span><strong>Current user</strong></div>
+      <div><span>Next step</span><strong>Open detail</strong></div>
+      <div><span>Last activity</span><strong>12 minutes ago</strong></div>
+    </div>
+    <div class="toolbar"><a class="button primary" href="onboarding-wizard.html">Customer Onboarding KYC Wizard</a><a class="button " href="onboarding-documents.html">Onboarding Document Management</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a></div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-commercial.html">Commercial &amp; Onboarding</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="onboarding-wizard.html">Customer Onboarding KYC Wizard</a><a class="button " href="onboarding-documents.html">Onboarding Document Management</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-commercial.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-048-A</td><td><span class="chip info">Open</span></td><td>Partial progress is safe</td><td><a href="onboarding-wizard.html">Customer Onboarding KYC Wizard</a></td></tr><tr><td>SCR-048-B</td><td><span class="chip warning">Blocked</span></td><td>Final approval blocks on connector/evidence</td><td><a href="onboarding-documents.html">Onboarding Document Management</a></td></tr><tr><td>SCR-048-C</td><td><span class="chip critical">Review</span></td><td>Activation handoff is separate</td><td><a href="approval-detail.html">Approval Detail and Evidence Review</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Partial progress is safe</div><div class="rule">Final approval blocks on connector/evidence</div><div class="rule">Activation handoff is separate</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="onboarding-wizard.html">Customer Onboarding KYC Wizard</a><a class="button primary" href="onboarding-documents.html">Onboarding Document Management</a><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-commercial.html">Back to Commercial &amp; Onboarding</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

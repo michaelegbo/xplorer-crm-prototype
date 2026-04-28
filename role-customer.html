@@ -13,11 +13,10 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a class="active" href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-customer.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Customer Portal User<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Customer Portal User<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
@@ -26,24 +25,29 @@
     </header>
     <main class="page">
       <div class="page-head">
-        <div><h1>Customer Portal Workspace</h1><p>Views own-record status, submits requests, uploads documents, manages appointment-related tasks, sends secure messages, and reviews consent history.</p></div>
-        <div class="toolbar"><a class="button primary" href="walkthrough-customer.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+        <div><h1>Customer Portal Workspace</h1><p>Assigned work and operational tasks for Self-service customer.</p></div>
+        <div class="toolbar"><a class="button primary" href="portal-status.html">Open first queue</a><a class="button " href="index.html">Switch role</a></div>
       </div>
       
-      <section class="stats"><div class="stat"><span>Role persona</span><strong>Self-service customer</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="stats"><div class="stat"><span>Assigned work</span><strong>3</strong><em>active items</em></div><div class="stat"><span>Due today</span><strong>12</strong><em>needs action</em></div><div class="stat"><span>Blocked</span><strong>5</strong><em>waiting on control</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
       <section class="panel">
-        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
-        <div class="two-col">
-          <div><div class="rule good">See own case and request status</div><div class="rule good">Upload documents and submit requests</div><div class="rule good">Send secure messages and review consent</div></div>
-          <div><div class="rule bad">See internal queues</div><div class="rule bad">Access staff approval tools</div><div class="rule bad">See other customer or tenant data</div></div>
-        </div>
+        <div class="section-title"><h2>My Work Queue</h2><span class="chip info">Today</span></div>
+        <table><thead><tr><th>Reference</th><th>Customer</th><th>Work type</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">TASK-3310</span></td><td>Amina Bello</td><td>Customer Status Portal</td><td><span class="chip info">In progress</span></td><td><a href="portal-status.html">Open</a></td></tr><tr><td><span class="mono">TASK-3311</span></td><td>Kano Traders Ltd</td><td>Customer Request Submission</td><td><span class="chip warning">Waiting</span></td><td><a href="portal-request.html">Open</a></td></tr><tr><td><span class="mono">TASK-3312</span></td><td>Northline Services</td><td>Portal Document Upload</td><td><span class="chip critical">Blocked</span></td><td><a href="portal-upload.html">Open</a></td></tr><tr><td><span class="mono">TASK-3313</span></td><td>GoTech Operations</td><td>Secure Messaging Portal</td><td><span class="chip success">Ready</span></td><td><a href="portal-messages.html">Open</a></td></tr><tr><td><span class="mono">TASK-3314</span></td><td>Surulere Distributor</td><td>Customer Consent History</td><td><span class="chip info">In progress</span></td><td><a href="portal-consent.html">Open</a></td></tr></tbody></table>
       </section>
       <section class="panel">
-        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
-        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-087 · M39 Self-Service Experience</span><h3>Customer Status Portal</h3><p>Customer-safe own-record status for cases, onboarding, service requests, appointments, and required actions.</p><a class="button primary" href="portal-status.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-088 · M39 Self-Service Experience</span><h3>Customer Request Submission</h3><p>Request form for complaint, service request, document update, or appointment-related customer action.</p><a class="button primary" href="portal-request.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-089 · M39 Self-Service Experience</span><h3>Portal Document Upload</h3><p>Customer document upload with file type rules, evidence metadata, status feedback, and remediation prompt.</p><a class="button primary" href="portal-upload.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-090 · M39 Self-Service Experience</span><h3>Secure Messaging Portal</h3><p>Secure customer messages linked to requests, cases, onboarding tasks, document evidence, and notification posture.</p><a class="button primary" href="portal-messages.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-098 · M12/M39 Consent &amp; Portal</span><h3>Customer Consent History</h3><p>Customer-visible consent history, purpose, channel, status, withdrawal path, and last update.</p><a class="button primary" href="portal-consent.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-051 · M35 Scheduling &amp; Appointment Engine</span><h3>Appointment Schedule</h3><p>Appointment list, slot state, customer task, staff capacity, portal booking, reschedule, and cancel context.</p><a class="button primary" href="field-schedule.html">Open page</a></div></div>
+        <div class="section-title"><h2>Workspaces</h2><span class="chip success">Available</span></div>
+        <div class="cards"><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-1</span><h3>Customer Status Portal</h3></div><span class="chip info">In progress</span></div><p>Primary queue</p><a class="button primary" href="portal-status.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-2</span><h3>Customer Request Submission</h3></div><span class="chip warning">Waiting</span></div><p>Needs review</p><a class="button primary" href="portal-request.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-3</span><h3>Portal Document Upload</h3></div><span class="chip critical">Blocked</span></div><p>Available workspace</p><a class="button primary" href="portal-upload.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-4</span><h3>Secure Messaging Portal</h3></div><span class="chip success">Ready</span></div><p>Available workspace</p><a class="button primary" href="portal-messages.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-5</span><h3>Customer Consent History</h3></div><span class="chip info">In progress</span></div><p>Available workspace</p><a class="button primary" href="portal-consent.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-6</span><h3>Appointment Schedule</h3></div><span class="chip warning">Waiting</span></div><p>Available workspace</p><a class="button primary" href="field-schedule.html">Open</a></div></div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Recent Activity</h2><span class="chip info">Live</span></div>
+        <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
       </section>
     
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

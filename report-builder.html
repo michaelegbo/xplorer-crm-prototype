@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a class="active" href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-compliance.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Compliance and Review Officer<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Compliance and Review Officer<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Compliance Reviewer / Report Builder and Parameters</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Compliance Reviewer / Report Builder and Parameters</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Compliance Reviewer</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,21 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-055 / SCR-056</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M10 Reporting &amp; Export Operations</td><td><a href="role-compliance.html">Compliance and Review Officer</a></td><td>Report type, parameters, date scope, masking declaration, sensitivity, and run configuration.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Report Builder and Parameters</h2><span class="chip success">Draft saved</span></div>
+    <div class="form-grid">
+      <label><span>Customer or subject</span><input value="Kano Traders Ltd"></label>
+      <label><span>Owner</span><select><option>Current role queue</option><option>Compliance queue</option><option>Service recovery</option></select></label>
+      <label><span>Priority</span><select><option>Normal</option><option>High</option><option>Blocked</option></select></label>
+      <label><span>Due date</span><input value="28 Apr 2026"></label>
+      <label class="wide"><span>Notes</span><textarea>Demo record prepared with evidence, customer context, and routed next action.</textarea></label>
+    </div>
+    <div class="toolbar"><a class="button " href="export-run.html">Save draft</a><a class="button primary" href="reports-dashboard.html">Submit</a></div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-compliance.html">Compliance Reviewer</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="export-run.html">Report Run History and Export Record</a><a class="button " href="reports-dashboard.html">Operational Analytics Dashboard</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-compliance.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-055-A</td><td><span class="chip info">Open</span></td><td>Masking is declared before output</td><td><a href="export-run.html">Report Run History and Export Record</a></td></tr><tr><td>SCR-055-B</td><td><span class="chip warning">Blocked</span></td><td>Sensitive reports route to approval</td><td><a href="reports-dashboard.html">Operational Analytics Dashboard</a></td></tr><tr><td>SCR-055-C</td><td><span class="chip critical">Review</span></td><td>Regulatory package is separate</td><td><a href="approval-detail.html">Approval Detail and Evidence Review</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Masking is declared before output</div><div class="rule">Sensitive reports route to approval</div><div class="rule">Regulatory package is separate</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="export-run.html">Report Run History and Export Record</a><a class="button primary" href="reports-dashboard.html">Operational Analytics Dashboard</a><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-compliance.html">Back to Compliance Reviewer</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

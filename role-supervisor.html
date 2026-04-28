@@ -13,11 +13,10 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a class="active" href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-supervisor.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Supervisor and Operations Manager<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Supervisor and Operations Manager<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
@@ -26,24 +25,29 @@
     </header>
     <main class="page">
       <div class="page-head">
-        <div><h1>Supervisor Workspace</h1><p>Monitors queues, SLA risk, team assignment, bottlenecks, remediation, operational KPIs, escalations, and AI override outcomes.</p></div>
-        <div class="toolbar"><a class="button primary" href="walkthrough-supervisor.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+        <div><h1>Supervisor Workspace</h1><p>Assigned work and operational tasks for Supervisor / Branch Manager / Service Lead.</p></div>
+        <div class="toolbar"><a class="button primary" href="workbench.html">Open first queue</a><a class="button " href="index.html">Switch role</a></div>
       </div>
       
-      <section class="stats"><div class="stat"><span>Role persona</span><strong>Supervisor</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="stats"><div class="stat"><span>Assigned work</span><strong>42</strong><em>active items</em></div><div class="stat"><span>Due today</span><strong>12</strong><em>needs action</em></div><div class="stat"><span>Blocked</span><strong>5</strong><em>waiting on control</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
       <section class="panel">
-        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
-        <div class="two-col">
-          <div><div class="rule good">Monitor performance and queue health</div><div class="rule good">Reassign work and coordinate remediation</div><div class="rule good">Request closure or escalation</div></div>
-          <div><div class="rule bad">Bypass maker-checker controls</div><div class="rule bad">See cross-tenant data</div><div class="rule bad">Use AI as final authority</div></div>
-        </div>
+        <div class="section-title"><h2>My Work Queue</h2><span class="chip info">Today</span></div>
+        <table><thead><tr><th>Reference</th><th>Customer</th><th>Work type</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">TASK-3310</span></td><td>Amina Bello</td><td>Operator Role Workbench</td><td><span class="chip info">In progress</span></td><td><a href="workbench.html">Open</a></td></tr><tr><td><span class="mono">TASK-3311</span></td><td>Kano Traders Ltd</td><td>Team Queue and Assignment</td><td><span class="chip warning">Waiting</span></td><td><a href="team-queue.html">Open</a></td></tr><tr><td><span class="mono">TASK-3312</span></td><td>Northline Services</td><td>Operational Analytics Dashboard</td><td><span class="chip critical">Blocked</span></td><td><a href="reports-dashboard.html">Open</a></td></tr><tr><td><span class="mono">TASK-3313</span></td><td>GoTech Operations</td><td>Case Escalation Surface</td><td><span class="chip success">Ready</span></td><td><a href="case-escalation.html">Open</a></td></tr><tr><td><span class="mono">TASK-3314</span></td><td>Surulere Distributor</td><td>AI Activity and Skill Usage Log</td><td><span class="chip info">In progress</span></td><td><a href="ai-activity.html">Open</a></td></tr></tbody></table>
       </section>
       <section class="panel">
-        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
-        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-001 · M05 Workbench &amp; Productivity</span><h3>Operator Role Workbench</h3><p>Role-aware cockpit for tasks, queue pressure, governance alerts, dependency health, and next handoff.</p><a class="button primary" href="workbench.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-005 / SCR-006 · M05 Workbench &amp; Productivity</span><h3>Team Queue and Assignment</h3><p>Team assignment, follow-up tasks, reminders, ownership, and workload balancing.</p><a class="button primary" href="team-queue.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-002 / SCR-045 / SCR-059 / SCR-060 / SCR-074 · M09 Operational Analytics</span><h3>Operational Analytics Dashboard</h3><p>KPI dashboards, portfolio performance, service failure investigation, remediation control, and branch scorecards.</p><a class="button primary" href="reports-dashboard.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-025 / SCR-026 · M03/M14 Service and Regulatory Controls</span><h3>Case Escalation Surface</h3><p>Escalation or closure request with rationale, evidence sufficiency, threshold conditions, and checker path.</p><a class="button primary" href="case-escalation.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-080 · M34 AI Command Center</span><h3>AI Activity and Skill Usage Log</h3><p>AI trace log with instruction, policy profile, model allowlist, guardrail outcome, actor, object, and override status.</p><a class="button primary" href="ai-activity.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-052 · M36 Work Order Engine</span><h3>Work Order Queue</h3><p>Work order queue with linked object, owner, SLA, dispatch state, skills, evidence requirements, and next action.</p><a class="button primary" href="field-workorders.html">Open page</a></div></div>
+        <div class="section-title"><h2>Workspaces</h2><span class="chip success">Available</span></div>
+        <div class="cards"><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-1</span><h3>Operator Role Workbench</h3></div><span class="chip info">In progress</span></div><p>Primary queue</p><a class="button primary" href="workbench.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-2</span><h3>Team Queue and Assignment</h3></div><span class="chip warning">Waiting</span></div><p>Needs review</p><a class="button primary" href="team-queue.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-3</span><h3>Operational Analytics Dashboard</h3></div><span class="chip critical">Blocked</span></div><p>Available workspace</p><a class="button primary" href="reports-dashboard.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-4</span><h3>Case Escalation Surface</h3></div><span class="chip success">Ready</span></div><p>Available workspace</p><a class="button primary" href="case-escalation.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-5</span><h3>AI Activity and Skill Usage Log</h3></div><span class="chip info">In progress</span></div><p>Available workspace</p><a class="button primary" href="ai-activity.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-6</span><h3>Work Order Queue</h3></div><span class="chip warning">Waiting</span></div><p>Available workspace</p><a class="button primary" href="field-workorders.html">Open</a></div></div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Recent Activity</h2><span class="chip info">Live</span></div>
+        <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
       </section>
     
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

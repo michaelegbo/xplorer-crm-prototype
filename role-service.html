@@ -13,11 +13,10 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a class="active" href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-service.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Service Operator<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Service Operator<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
@@ -26,24 +25,29 @@
     </header>
     <main class="page">
       <div class="page-head">
-        <div><h1>Service Agent Workspace</h1><p>Handles complaints, interaction records, omnichannel inbox items, case queues, SLA risk, evidence, recovery tasks, and escalation requests.</p></div>
-        <div class="toolbar"><a class="button primary" href="walkthrough-service.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+        <div><h1>Service Agent Workspace</h1><p>Assigned work and operational tasks for Service Agent / Contact Center Agent.</p></div>
+        <div class="toolbar"><a class="button primary" href="contact-center.html">Open first queue</a><a class="button " href="index.html">Switch role</a></div>
       </div>
       
-      <section class="stats"><div class="stat"><span>Role persona</span><strong>Service Agent</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="stats"><div class="stat"><span>Assigned work</span><strong>42</strong><em>active items</em></div><div class="stat"><span>Due today</span><strong>12</strong><em>needs action</em></div><div class="stat"><span>Blocked</span><strong>5</strong><em>waiting on control</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
       <section class="panel">
-        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
-        <div class="two-col">
-          <div><div class="rule good">Create and update service cases</div><div class="rule good">Attach evidence and interaction history</div><div class="rule good">Escalate or request closure</div></div>
-          <div><div class="rule bad">Close maker-checker cases directly</div><div class="rule bad">Treat connector failure as success</div><div class="rule bad">Use customer data outside scope</div></div>
-        </div>
+        <div class="section-title"><h2>My Work Queue</h2><span class="chip info">Today</span></div>
+        <table><thead><tr><th>Reference</th><th>Customer</th><th>Work type</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">TASK-3310</span></td><td>Amina Bello</td><td>Omnichannel Contact Center</td><td><span class="chip info">In progress</span></td><td><a href="contact-center.html">Open</a></td></tr><tr><td><span class="mono">TASK-3311</span></td><td>Kano Traders Ltd</td><td>Case Queue</td><td><span class="chip warning">Waiting</span></td><td><a href="case-queue.html">Open</a></td></tr><tr><td><span class="mono">TASK-3312</span></td><td>Northline Services</td><td>Case Creation Form</td><td><span class="chip critical">Blocked</span></td><td><a href="case-new.html">Open</a></td></tr><tr><td><span class="mono">TASK-3313</span></td><td>GoTech Operations</td><td>Case Detail and Update</td><td><span class="chip success">Ready</span></td><td><a href="case-detail.html">Open</a></td></tr><tr><td><span class="mono">TASK-3314</span></td><td>Surulere Distributor</td><td>Recovery Action Queue</td><td><span class="chip info">In progress</span></td><td><a href="recovery-queue.html">Open</a></td></tr></tbody></table>
       </section>
       <section class="panel">
-        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
-        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-007 / SCR-029 / SCR-072 / SCR-073 · M33 Omnichannel Contact Center &amp; Routing</span><h3>Omnichannel Contact Center</h3><p>Unified inbox, routing view, wallboard, active conversation, and handoff to case, lead, onboarding, or customer record.</p><a class="button primary" href="contact-center.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-020 / SCR-028 · M03 Service Engine</span><h3>Case Queue</h3><p>Queue-first service view with SLA, ownership, status, customer context, recovery state, and escalation risk.</p><a class="button primary" href="case-queue.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-021 · M03 Service Engine</span><h3>Case Creation Form</h3><p>Complaint or service request creation with customer context, case type, evidence, channel, and initial SLA posture.</p><a class="button primary" href="case-new.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-023 / SCR-024 / SCR-027 · M03 Service Engine</span><h3>Case Detail and Update</h3><p>Case detail, timeline, remediation, evidence, recovery workspace, tasks, customer messages, and next actions.</p><a class="button primary" href="case-detail.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-022 · M03/M24 Service Recovery and Integration Gateway</span><h3>Recovery Action Queue</h3><p>Recovery tasks created by failed connectors, stale checks, notification failures, or blocked downstream actions.</p><a class="button primary" href="recovery-queue.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-064 · M08 Knowledge &amp; Guidance</span><h3>Knowledge Base Browse</h3><p>Knowledge categories, article search, workflow relevance, publish state, and related procedure entry.</p><a class="button primary" href="knowledge-browse.html">Open page</a></div></div>
+        <div class="section-title"><h2>Workspaces</h2><span class="chip success">Available</span></div>
+        <div class="cards"><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-1</span><h3>Omnichannel Contact Center</h3></div><span class="chip info">In progress</span></div><p>Primary queue</p><a class="button primary" href="contact-center.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-2</span><h3>Case Queue</h3></div><span class="chip warning">Waiting</span></div><p>Needs review</p><a class="button primary" href="case-queue.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-3</span><h3>Case Creation Form</h3></div><span class="chip critical">Blocked</span></div><p>Available workspace</p><a class="button primary" href="case-new.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-4</span><h3>Case Detail and Update</h3></div><span class="chip success">Ready</span></div><p>Available workspace</p><a class="button primary" href="case-detail.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-5</span><h3>Recovery Action Queue</h3></div><span class="chip info">In progress</span></div><p>Available workspace</p><a class="button primary" href="recovery-queue.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-6</span><h3>Knowledge Base Browse</h3></div><span class="chip warning">Waiting</span></div><p>Available workspace</p><a class="button primary" href="knowledge-browse.html">Open</a></div></div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Recent Activity</h2><span class="chip info">Live</span></div>
+        <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
       </section>
     
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a class="active" href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-compliance.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Compliance and Review Officer<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Compliance and Review Officer<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Compliance Reviewer / Policy Hold List</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Compliance Reviewer / Policy Hold List</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Compliance Reviewer</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,29 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-034</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M14 Regulatory Controls</td><td><a href="role-compliance.html">Compliance and Review Officer</a></td><td>Policy hold list with reason, holding actor, affected workflow, remediation owner, and release path.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Policy Hold List</h2><span class="chip info">Queue</span></div>
+    <div class="filters">
+      <label><span>Search</span><input value="Kano"></label>
+      <label><span>Status</span><select><option>All active</option><option>Blocked</option><option>Waiting</option></select></label>
+      <label><span>Owner</span><select><option>My queue</option><option>Team queue</option></select></label>
+    </div>
+    <table><thead><tr><th>Reference</th><th>Customer</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">PHL-2180</span></td><td>Amina Bello</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="approval-detail.html">Open</a></td></tr><tr><td><span class="mono">PHL-2181</span></td><td>Kano Traders Ltd</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="case-detail.html">Open</a></td></tr><tr><td><span class="mono">PHL-2182</span></td><td>Northline Services</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="access-identity.html">Open</a></td></tr><tr><td><span class="mono">PHL-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="approval-detail.html">Open</a></td></tr></tbody></table>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Selected Record Preview</h2><span class="chip info">REC-4821</span></div>
+    <div class="preview-grid">
+      <div><span>Customer</span><strong>Kano Traders Ltd</strong></div>
+      <div><span>Owner</span><strong>Current user</strong></div>
+      <div><span>Next step</span><strong>Open detail</strong></div>
+      <div><span>Last activity</span><strong>12 minutes ago</strong></div>
+    </div>
+    <div class="toolbar"><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="case-detail.html">Case Detail and Update</a><a class="button " href="access-identity.html">Identity, KYC Exceptions and Duplicate Review</a></div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-compliance.html">Compliance Reviewer</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="case-detail.html">Case Detail and Update</a><a class="button " href="access-identity.html">Identity, KYC Exceptions and Duplicate Review</a><a class="button " href="role-compliance.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-034-A</td><td><span class="chip info">Open</span></td><td>Held work cannot progress silently</td><td><a href="approval-detail.html">Approval Detail and Evidence Review</a></td></tr><tr><td>SCR-034-B</td><td><span class="chip warning">Blocked</span></td><td>Release is also governed</td><td><a href="case-detail.html">Case Detail and Update</a></td></tr><tr><td>SCR-034-C</td><td><span class="chip critical">Review</span></td><td>Reason and owner are visible</td><td><a href="access-identity.html">Identity, KYC Exceptions and Duplicate Review</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Held work cannot progress silently</div><div class="rule">Release is also governed</div><div class="rule">Reason and owner are visible</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button primary" href="case-detail.html">Case Detail and Update</a><a class="button primary" href="access-identity.html">Identity, KYC Exceptions and Duplicate Review</a><a class="button " href="role-compliance.html">Back to Compliance Reviewer</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

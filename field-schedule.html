@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a class="active" href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-field.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Field Representative and Inspector<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Field Representative and Inspector<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Field Ops / Appointment Schedule</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Field Ops / Appointment Schedule</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Field Ops</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,21 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-051</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M35 Scheduling &amp; Appointment Engine</td><td><a href="role-field.html">Field Representative and Inspector</a></td><td>Appointment list, slot state, customer task, staff capacity, portal booking, reschedule, and cancel context.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Appointment Schedule</h2><span class="chip success">Draft saved</span></div>
+    <div class="form-grid">
+      <label><span>Customer or subject</span><input value="Kano Traders Ltd"></label>
+      <label><span>Owner</span><select><option>Current role queue</option><option>Compliance queue</option><option>Service recovery</option></select></label>
+      <label><span>Priority</span><select><option>Normal</option><option>High</option><option>Blocked</option></select></label>
+      <label><span>Due date</span><input value="28 Apr 2026"></label>
+      <label class="wide"><span>Notes</span><textarea>Demo record prepared with evidence, customer context, and routed next action.</textarea></label>
+    </div>
+    <div class="toolbar"><a class="button " href="field-workorders.html">Save draft</a><a class="button primary" href="portal-status.html">Submit</a></div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-field.html">Field Ops</a></td><td>Primary actor with enabled workflow actions.</td></tr><tr><td><a href="role-customer.html">Customer Portal</a></td><td>Secondary or related actor with limited visibility or handoff context.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="field-workorders.html">Work Order Queue</a><a class="button " href="portal-status.html">Customer Status Portal</a><a class="button " href="onboarding-documents.html">Onboarding Document Management</a><a class="button " href="role-field.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-051-A</td><td><span class="chip info">Open</span></td><td>Appointments are role-scoped</td><td><a href="field-workorders.html">Work Order Queue</a></td></tr><tr><td>SCR-051-B</td><td><span class="chip warning">Blocked</span></td><td>Customer portal sees own slots only</td><td><a href="portal-status.html">Customer Status Portal</a></td></tr><tr><td>SCR-051-C</td><td><span class="chip critical">Review</span></td><td>Blocked slots explain reason</td><td><a href="onboarding-documents.html">Onboarding Document Management</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Appointments are role-scoped</div><div class="rule">Customer portal sees own slots only</div><div class="rule">Blocked slots explain reason</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="field-workorders.html">Work Order Queue</a><a class="button primary" href="portal-status.html">Customer Status Portal</a><a class="button primary" href="onboarding-documents.html">Onboarding Document Management</a><a class="button " href="role-field.html">Back to Field Ops</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a class="active" href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-customer.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Customer Portal User<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Customer Portal User<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Customer Portal / Secure Messaging Portal</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Customer Portal / Secure Messaging Portal</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Customer Portal</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -30,27 +29,32 @@
         <div class="toolbar"><a class="button " href="role-customer.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
       </div>
       
+    <section class="detail-grid">
+    <div class="panel">
+      <div class="record-title"><div><span class="mono">REC-4821</span><h2>Secure Messaging Portal</h2><p>A live demo record with customer context, state, owner, evidence posture, and next action.</p></div><span class="chip success">Active</span></div>
+      <div class="mini-grid">
+        <div><span>Customer</span><strong>Kano Traders Ltd</strong></div>
+        <div><span>Owner</span><strong>Current role queue</strong></div>
+        <div><span>Evidence</span><strong>4 of 5 items</strong></div>
+        <div><span>Risk</span><strong>Medium</strong></div>
+      </div>
+      <table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Current state</td><td><span class="chip warning">Review required</span></td></tr><tr><td>Last update</td><td>Today, 12:05</td></tr><tr><td>Linked workflow</td><td><a href="portal-status.html">Customer Status Portal</a></td></tr><tr><td>Customer contact</td><td>SMS allowed, WhatsApp not granted</td></tr></tbody></table>
+    </div>
+    <aside class="panel">
+      <div class="section-title"><h2>Actions</h2><span class="chip info">Role scoped</span></div>
+      <div class="action-stack"><a class="button primary" href="portal-status.html">Customer Status Portal</a><a class="button " href="portal-consent.html">Customer Consent History</a><a class="button " href="case-detail.html">Case Detail and Update</a></div>
+      <h3>Activity</h3><div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
+    </aside>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-090</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M39 Self-Service Experience</td><td><a href="role-customer.html">Customer Portal User</a></td><td>Secure customer messages linked to requests, cases, onboarding tasks, document evidence, and notification posture.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="portal-status.html">Customer Status Portal</a><a class="button " href="portal-consent.html">Customer Consent History</a><a class="button " href="case-detail.html">Case Detail and Update</a><a class="button " href="role-customer.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-customer.html">Customer Portal</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-090-A</td><td><span class="chip info">Open</span></td><td>Messages are own-record only</td><td><a href="portal-status.html">Customer Status Portal</a></td></tr><tr><td>SCR-090-B</td><td><span class="chip warning">Blocked</span></td><td>Staff replies are traceable</td><td><a href="portal-consent.html">Customer Consent History</a></td></tr><tr><td>SCR-090-C</td><td><span class="chip critical">Review</span></td><td>Channel preference is respected</td><td><a href="case-detail.html">Case Detail and Update</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Messages are own-record only</div><div class="rule">Staff replies are traceable</div><div class="rule">Channel preference is respected</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="portal-status.html">Customer Status Portal</a><a class="button primary" href="portal-consent.html">Customer Consent History</a><a class="button primary" href="case-detail.html">Case Detail and Update</a><a class="button " href="role-customer.html">Back to Customer Portal</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

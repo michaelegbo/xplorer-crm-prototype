@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a class="active" href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-supervisor.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Supervisor and Operations Manager<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Supervisor and Operations Manager<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Supervisor / Operational Analytics Dashboard</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Supervisor / Operational Analytics Dashboard</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Supervisor</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,23 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-002 / SCR-045 / SCR-059 / SCR-060 / SCR-074</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M09 Operational Analytics</td><td><a href="role-supervisor.html">Supervisor and Operations Manager</a></td><td>KPI dashboards, portfolio performance, service failure investigation, remediation control, and branch scorecards.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Operational Analytics Dashboard</h2><span class="chip info">Live demo data</span></div>
+    <section class="stats"><div class="stat"><span>Open</span><strong>128</strong><em>in role scope</em></div><div class="stat"><span>Due today</span><strong>24</strong><em>requires attention</em></div><div class="stat"><span>Blocked</span><strong>8</strong><em>policy/evidence/dependency</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
+    <table><thead><tr><th>Reference</th><th>Customer</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">OAD-2180</span></td><td>Amina Bello</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="report-builder.html">Open</a></td></tr><tr><td><span class="mono">OAD-2181</span></td><td>Kano Traders Ltd</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="case-queue.html">Open</a></td></tr><tr><td><span class="mono">OAD-2182</span></td><td>Northline Services</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="onboarding-queue.html">Open</a></td></tr><tr><td><span class="mono">OAD-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="report-builder.html">Open</a></td></tr></tbody></table>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Operational Activity</h2><span class="chip success">Recent</span></div>
+    <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-supervisor.html">Supervisor</a></td><td>Primary actor with enabled workflow actions.</td></tr><tr><td><a href="role-marketing.html">Marketing</a></td><td>Secondary or related actor with limited visibility or handoff context.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="report-builder.html">Report Builder and Parameters</a><a class="button " href="case-queue.html">Case Queue</a><a class="button " href="onboarding-queue.html">Onboarding Activity Queue</a><a class="button " href="role-supervisor.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-002-A</td><td><span class="chip info">Open</span></td><td>Freshness is visible</td><td><a href="report-builder.html">Report Builder and Parameters</a></td></tr><tr><td>SCR-002-B</td><td><span class="chip warning">Blocked</span></td><td>Metrics route to underlying work</td><td><a href="case-queue.html">Case Queue</a></td></tr><tr><td>SCR-002-C</td><td><span class="chip critical">Review</span></td><td>Cross-tenant aggregate access is restricted</td><td><a href="onboarding-queue.html">Onboarding Activity Queue</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Freshness is visible</div><div class="rule">Metrics route to underlying work</div><div class="rule">Cross-tenant aggregate access is restricted</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="report-builder.html">Report Builder and Parameters</a><a class="button primary" href="case-queue.html">Case Queue</a><a class="button primary" href="onboarding-queue.html">Onboarding Activity Queue</a><a class="button " href="role-supervisor.html">Back to Supervisor</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

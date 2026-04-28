@@ -13,11 +13,10 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a class="active" href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-compliance.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Compliance and Review Officer<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Compliance and Review Officer<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
@@ -26,24 +25,29 @@
     </header>
     <main class="page">
       <div class="page-head">
-        <div><h1>Compliance Reviewer Workspace</h1><p>Reviews approvals, policy holds, onboarding exceptions, sensitive reveals, exports, closure requests, and evidence sufficiency.</p></div>
-        <div class="toolbar"><a class="button primary" href="walkthrough-compliance.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+        <div><h1>Compliance Reviewer Workspace</h1><p>Assigned work and operational tasks for Compliance Officer / Restricted Reviewer.</p></div>
+        <div class="toolbar"><a class="button primary" href="approval-queue.html">Open first queue</a><a class="button " href="index.html">Switch role</a></div>
       </div>
       
-      <section class="stats"><div class="stat"><span>Role persona</span><strong>Compliance Officer</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Checker</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="stats"><div class="stat"><span>Assigned work</span><strong>42</strong><em>active items</em></div><div class="stat"><span>Due today</span><strong>12</strong><em>needs action</em></div><div class="stat"><span>Blocked</span><strong>18</strong><em>waiting on control</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
       <section class="panel">
-        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
-        <div class="two-col">
-          <div><div class="rule good">Review approval queues</div><div class="rule good">Inspect evidence bundles</div><div class="rule good">Approve, reject, hold, or release governed work</div></div>
-          <div><div class="rule bad">Approve work they initiated</div><div class="rule bad">Release export output without required trace</div><div class="rule bad">Bypass evidence failure</div></div>
-        </div>
+        <div class="section-title"><h2>My Work Queue</h2><span class="chip info">Today</span></div>
+        <table><thead><tr><th>Reference</th><th>Customer</th><th>Work type</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">TASK-3310</span></td><td>Amina Bello</td><td>Maker-Checker Approval Queue</td><td><span class="chip info">In progress</span></td><td><a href="approval-queue.html">Open</a></td></tr><tr><td><span class="mono">TASK-3311</span></td><td>Kano Traders Ltd</td><td>Approval Detail and Evidence Review</td><td><span class="chip warning">Waiting</span></td><td><a href="approval-detail.html">Open</a></td></tr><tr><td><span class="mono">TASK-3312</span></td><td>Northline Services</td><td>Policy Hold List</td><td><span class="chip critical">Blocked</span></td><td><a href="policy-holds.html">Open</a></td></tr><tr><td><span class="mono">TASK-3313</span></td><td>GoTech Operations</td><td>Identity, KYC Exceptions and Duplicate Review</td><td><span class="chip success">Ready</span></td><td><a href="access-identity.html">Open</a></td></tr><tr><td><span class="mono">TASK-3314</span></td><td>Surulere Distributor</td><td>Report Builder and Parameters</td><td><span class="chip info">In progress</span></td><td><a href="report-builder.html">Open</a></td></tr></tbody></table>
       </section>
       <section class="panel">
-        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
-        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-031 / SCR-032 variants · M14 Regulatory Controls</span><h3>Maker-Checker Approval Queue</h3><p>Approval queue for onboarding, closure, sensitive reveal, export, configuration, replay, and sector promotion decisions.</p><a class="button primary" href="approval-queue.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-032-A to SCR-032-E / ISF-004 / ISF-005 · M14 Regulatory Controls</span><h3>Approval Detail and Evidence Review</h3><p>Evidence-first review page with proposer summary, decision options, rationale, policy notes, and immutable write warning.</p><a class="button primary" href="approval-detail.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-034 · M14 Regulatory Controls</span><h3>Policy Hold List</h3><p>Policy hold list with reason, holding actor, affected workflow, remediation owner, and release path.</p><a class="button primary" href="policy-holds.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-009 / SCR-015 / SCR-018 · M11 Identity Context</span><h3>Identity, KYC Exceptions and Duplicate Review</h3><p>Restricted identity context, KYC exception queue, duplicate/conflict review, PEP flags, and manual override posture.</p><a class="button primary" href="access-identity.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-055 / SCR-056 · M10 Reporting &amp; Export Operations</span><h3>Report Builder and Parameters</h3><p>Report type, parameters, date scope, masking declaration, sensitivity, and run configuration.</p><a class="button primary" href="report-builder.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-057 / SCR-058 / SCR-075 · M10 Reporting &amp; Export Operations</span><h3>Report Run History and Export Record</h3><p>Run history, export record, regulatory submission, approval state, transmission trail, and output release posture.</p><a class="button primary" href="export-run.html">Open page</a></div></div>
+        <div class="section-title"><h2>Workspaces</h2><span class="chip success">Available</span></div>
+        <div class="cards"><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-1</span><h3>Maker-Checker Approval Queue</h3></div><span class="chip info">In progress</span></div><p>Primary queue</p><a class="button primary" href="approval-queue.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-2</span><h3>Approval Detail and Evidence Review</h3></div><span class="chip warning">Waiting</span></div><p>Needs review</p><a class="button primary" href="approval-detail.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-3</span><h3>Policy Hold List</h3></div><span class="chip critical">Blocked</span></div><p>Available workspace</p><a class="button primary" href="policy-holds.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-4</span><h3>Identity, KYC Exceptions and Duplicate Review</h3></div><span class="chip success">Ready</span></div><p>Available workspace</p><a class="button primary" href="access-identity.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-5</span><h3>Report Builder and Parameters</h3></div><span class="chip info">In progress</span></div><p>Available workspace</p><a class="button primary" href="report-builder.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-6</span><h3>Report Run History and Export Record</h3></div><span class="chip warning">Waiting</span></div><p>Available workspace</p><a class="button primary" href="export-run.html">Open</a></div></div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Recent Activity</h2><span class="chip info">Live</span></div>
+        <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
       </section>
     
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

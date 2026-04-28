@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a class="active" href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-service.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Service Operator<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Service Operator<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Service Agent / Customer Activity History</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Service Agent / Customer Activity History</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Service Agent</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,23 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-016 / SCR-017</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M01/M02 Customer Core and Interaction Engine</td><td><a href="role-service.html">Service Operator</a></td><td>Timeline of interactions, channels, cases, campaign response, onboarding events, notifications, and evidence links.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Customer Activity History</h2><span class="chip info">Live demo data</span></div>
+    <section class="stats"><div class="stat"><span>Open</span><strong>128</strong><em>in role scope</em></div><div class="stat"><span>Due today</span><strong>24</strong><em>requires attention</em></div><div class="stat"><span>Blocked</span><strong>8</strong><em>policy/evidence/dependency</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
+    <table><thead><tr><th>Reference</th><th>Customer</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">CAH-2180</span></td><td>Amina Bello</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="contact-center.html">Open</a></td></tr><tr><td><span class="mono">CAH-2181</span></td><td>Kano Traders Ltd</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="case-detail.html">Open</a></td></tr><tr><td><span class="mono">CAH-2182</span></td><td>Northline Services</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="customer-360.html">Open</a></td></tr><tr><td><span class="mono">CAH-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="contact-center.html">Open</a></td></tr></tbody></table>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Operational Activity</h2><span class="chip success">Recent</span></div>
+    <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-service.html">Service Agent</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="contact-center.html">Omnichannel Contact Center</a><a class="button " href="case-detail.html">Case Detail and Update</a><a class="button " href="customer-360.html">Customer 360</a><a class="button " href="role-service.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-016-A</td><td><span class="chip info">Open</span></td><td>History is reconstructable</td><td><a href="contact-center.html">Omnichannel Contact Center</a></td></tr><tr><td>SCR-016-B</td><td><span class="chip warning">Blocked</span></td><td>Channel source and consent posture are visible</td><td><a href="case-detail.html">Case Detail and Update</a></td></tr><tr><td>SCR-016-C</td><td><span class="chip critical">Review</span></td><td>Interactions can attach to governed work</td><td><a href="customer-360.html">Customer 360</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">History is reconstructable</div><div class="rule">Channel source and consent posture are visible</div><div class="rule">Interactions can attach to governed work</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="contact-center.html">Omnichannel Contact Center</a><a class="button primary" href="case-detail.html">Case Detail and Update</a><a class="button primary" href="customer-360.html">Customer 360</a><a class="button " href="role-service.html">Back to Service Agent</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

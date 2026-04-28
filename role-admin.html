@@ -13,11 +13,10 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a class="active" href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-admin.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Tenant and Platform Administrator<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Tenant and Platform Administrator<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
@@ -26,24 +25,29 @@
     </header>
     <main class="page">
       <div class="page-head">
-        <div><h1>Tenant Admin Workspace</h1><p>Manages tenant conformance, role bindings, endpoint bindings, integration recovery, sessions, activation readiness, and protected changes.</p></div>
-        <div class="toolbar"><a class="button primary" href="walkthrough-admin.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+        <div><h1>Tenant Admin Workspace</h1><p>Assigned work and operational tasks for Tenant Admin / Platform Support.</p></div>
+        <div class="toolbar"><a class="button primary" href="tenant-conformance.html">Open first queue</a><a class="button " href="index.html">Switch role</a></div>
       </div>
       
-      <section class="stats"><div class="stat"><span>Role persona</span><strong>Tenant Admin</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="stats"><div class="stat"><span>Assigned work</span><strong>42</strong><em>active items</em></div><div class="stat"><span>Due today</span><strong>7</strong><em>needs action</em></div><div class="stat"><span>Blocked</span><strong>5</strong><em>waiting on control</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
       <section class="panel">
-        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
-        <div class="two-col">
-          <div><div class="rule good">Configure tenant-safe settings</div><div class="rule good">Recover integrations through governed replay</div><div class="rule good">Manage role and workspace bindings</div></div>
-          <div><div class="rule bad">Override shared security semantics</div><div class="rule bad">Activate incomplete tenant setups</div><div class="rule bad">Use break-glass without approval</div></div>
-        </div>
+        <div class="section-title"><h2>My Work Queue</h2><span class="chip info">Today</span></div>
+        <table><thead><tr><th>Reference</th><th>Customer</th><th>Work type</th><th>State</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">TASK-3310</span></td><td>Amina Bello</td><td>Tenant Conformance Workspace</td><td><span class="chip info">In progress</span></td><td><a href="tenant-conformance.html">Open</a></td></tr><tr><td><span class="mono">TASK-3311</span></td><td>Kano Traders Ltd</td><td>Tenant Activation and Post-Activation Watch</td><td><span class="chip warning">Waiting</span></td><td><a href="tenant-activation.html">Open</a></td></tr><tr><td><span class="mono">TASK-3312</span></td><td>Northline Services</td><td>Role, Workspace, User and Session Administration</td><td><span class="chip critical">Blocked</span></td><td><a href="access-roles.html">Open</a></td></tr><tr><td><span class="mono">TASK-3313</span></td><td>GoTech Operations</td><td>Integration Health Dashboard</td><td><span class="chip success">Ready</span></td><td><a href="integration-health.html">Open</a></td></tr><tr><td><span class="mono">TASK-3314</span></td><td>Surulere Distributor</td><td>Connector Contract Detail</td><td><span class="chip info">In progress</span></td><td><a href="connector-detail.html">Open</a></td></tr></tbody></table>
       </section>
       <section class="panel">
-        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
-        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-083 / SCR-084 / SCR-086 / SCR-110 / SCR-111 · M17 Tenant Conformance Runtime</span><h3>Tenant Conformance Workspace</h3><p>Tenant configuration, role mapping, endpoint binding, threshold wording, branding, diff impact, and protected change posture.</p><a class="button primary" href="tenant-conformance.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-093 / SCR-113 / SCR-114 · M17/M24 Tenant Runtime</span><h3>Tenant Activation and Post-Activation Watch</h3><p>Activation checklist, readiness gate, sponsor sign-off, connector readiness, activation decision, and watch window.</p><a class="button primary" href="tenant-activation.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-082 / SCR-085 / SCR-091 / SCR-092 / SCR-096 / SCR-099 · M17/M31 Access Control</span><h3>Role, Workspace, User and Session Administration</h3><p>Login, authentication challenge, timeout recovery, role/workspace binding, user administration, and device/session review.</p><a class="button primary" href="access-roles.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-004 / SCR-094 · M24 Integration Gateway</span><h3>Integration Health Dashboard</h3><p>Connector state, stale-source warning, affected workflows, degraded-mode banner, and recovery entry.</p><a class="button primary" href="integration-health.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-078 / SCR-112 · M24 Integration Gateway / M20 Runtime Binding</span><h3>Connector Contract Detail</h3><p>Connector endpoint, auth posture, callback verification, retry policy, tenant binding, and sandbox/production posture.</p><a class="button primary" href="connector-detail.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-081 · M24 Integration Gateway</span><h3>Replay and Reconciliation Log</h3><p>Replay queue, reconciliation events, idempotency keys, duplicate suppression, callback rejection, and recovery outcome.</p><a class="button primary" href="replay-log.html">Open page</a></div></div>
+        <div class="section-title"><h2>Workspaces</h2><span class="chip success">Available</span></div>
+        <div class="cards"><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-1</span><h3>Tenant Conformance Workspace</h3></div><span class="chip info">In progress</span></div><p>Primary queue</p><a class="button primary" href="tenant-conformance.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-2</span><h3>Tenant Activation and Post-Activation Watch</h3></div><span class="chip warning">Waiting</span></div><p>Needs review</p><a class="button primary" href="tenant-activation.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-3</span><h3>Role, Workspace, User and Session Administration</h3></div><span class="chip critical">Blocked</span></div><p>Available workspace</p><a class="button primary" href="access-roles.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-4</span><h3>Integration Health Dashboard</h3></div><span class="chip success">Ready</span></div><p>Available workspace</p><a class="button primary" href="integration-health.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-5</span><h3>Connector Contract Detail</h3></div><span class="chip info">In progress</span></div><p>Available workspace</p><a class="button primary" href="connector-detail.html">Open</a></div><div class="mini-card"><div class="record-title small"><div><span class="mono">WS-6</span><h3>Replay and Reconciliation Log</h3></div><span class="chip warning">Waiting</span></div><p>Available workspace</p><a class="button primary" href="replay-log.html">Open</a></div></div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Recent Activity</h2><span class="chip info">Live</span></div>
+        <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+  </div>
       </section>
     
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>

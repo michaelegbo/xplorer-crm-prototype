@@ -13,15 +13,14 @@
     <div class="side-title">Login As</div>
     <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a class="active" href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
     <div class="side-actions">
-      <a class="button " href="walkthrough.html">Solution walkthrough</a>
-      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="role-admin.html">My workspace</a>
       <a class="button " href="index.html">Switch role</a>
     </div>
-    <div class="side-meta"><strong>Role scope</strong><br>Tenant and Platform Administrator<br>Tenant: GoTech pilot</div>
+    <div class="side-meta"><strong>Signed in</strong><br>Tenant and Platform Administrator<br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Tenant Admin / Tenant Activation and Post-Activation Watch</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div><div class="crumb">Xplorer / Tenant Admin / Tenant Activation and Post-Activation Watch</div><div class="status"><span></span>Workspace active</div></div>
       <div class="top-actions"><span class="chip info">Tenant Admin</span><span class="chip success">R1 controlled build</span></div>
     </header>
     <main class="page">
@@ -31,26 +30,21 @@
       </div>
       
     <section class="panel">
-      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-093 / SCR-113 / SCR-114</span></div>
-      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M17/M24 Tenant Runtime</td><td><a href="role-admin.html">Tenant and Platform Administrator</a></td><td>Activation checklist, readiness gate, sponsor sign-off, connector readiness, activation decision, and watch window.</td></tr></tbody></table>
-    </section>
+    <div class="section-title"><h2>Tenant Activation and Post-Activation Watch</h2><span class="chip success">Draft saved</span></div>
+    <div class="form-grid">
+      <label><span>Customer or subject</span><input value="Kano Traders Ltd"></label>
+      <label><span>Owner</span><select><option>Current role queue</option><option>Compliance queue</option><option>Service recovery</option></select></label>
+      <label><span>Priority</span><select><option>Normal</option><option>High</option><option>Blocked</option></select></label>
+      <label><span>Due date</span><input value="28 Apr 2026"></label>
+      <label class="wide"><span>Notes</span><textarea>Demo record prepared with evidence, customer context, and routed next action.</textarea></label>
+    </div>
+    <div class="toolbar"><a class="button " href="tenant-conformance.html">Save draft</a><a class="button primary" href="integration-health.html">Submit</a></div>
+  </section>
     <section class="panel">
-      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
-      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-admin.html">Tenant Admin</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
+      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
+      <div class="toolbar"><a class="button primary" href="tenant-conformance.html">Tenant Conformance Workspace</a><a class="button " href="integration-health.html">Integration Health Dashboard</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-admin.html">Back to workspace</a></div>
     </section>
-    <section class="panel">
-      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
-      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-093-A</td><td><span class="chip info">Open</span></td><td>Activation blocks on incomplete controls</td><td><a href="tenant-conformance.html">Tenant Conformance Workspace</a></td></tr><tr><td>SCR-093-B</td><td><span class="chip warning">Blocked</span></td><td>Watch window tracks failures</td><td><a href="integration-health.html">Integration Health Dashboard</a></td></tr><tr><td>SCR-093-C</td><td><span class="chip critical">Review</span></td><td>Rollback triggers are explicit</td><td><a href="approval-detail.html">Approval Detail and Evidence Review</a></td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
-      <div class="rules"><div class="rule">Activation blocks on incomplete controls</div><div class="rule">Watch window tracks failures</div><div class="rule">Rollback triggers are explicit</div></div>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
-      <div class="toolbar"><a class="button primary" href="tenant-conformance.html">Tenant Conformance Workspace</a><a class="button primary" href="integration-health.html">Integration Health Dashboard</a><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-admin.html">Back to Tenant Admin</a></div>
-    </section>
-      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
     </main>
   </section>
 </div>
