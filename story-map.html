@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Story Map - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a class="active" href="story-map.html">Story Map</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Story Map</div>
+        <div class="top-actions"><span class="status-dot"></span> PM-grade story and traceability view</div>
+      </div>
+      <div class="top-actions"><span>Product Manager</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Product Story Map</h1><p class="lead">A product-manager view of the release: epics, user goals, journey flow, acceptance themes, and prototype coverage.</p></div>
+        <div class="toolbar"><a class="button primary" href="onboarding.html">Open prototype</a><a class="button " href="style-guide.html#map">Trace screens</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#epics">Epics</a><a href="#journeys">Journeys</a><a href="#acceptance">Acceptance</a><a href="#screen-coverage">Screen coverage</a><a href="#gaps">Source reconciliation</a></nav>
+      <section id="epics" class="panel page-section">
+        <div class="section-title"><div><h2>Release 1 Epics</h2><p>Each epic maps to a real workflow family, not a decorative page.</p></div><span class="badge info">PM view</span></div>
+        <div class="cards story-cards">
+          <div class="panel"><h3>Customer Relationship Core</h3><p>Find customers, inspect 360 context, activity, consent, masked identity, and next action.</p><a href="customers.html">Open Customers</a></div>
+          <div class="panel"><h3>Onboarding and KYC</h3><p>Start from activity queue, manage documents, resolve missing items, run KYC, submit to approval.</p><a href="onboarding.html">Open Onboarding</a></div>
+          <div class="panel"><h3>Service Recovery</h3><p>Create cases, own queues, track SLA, attach evidence, recover service, escalate, request closure.</p><a href="cases.html">Open Cases</a></div>
+          <div class="panel"><h3>Governance Controls</h3><p>Review approvals, inspect evidence, apply holds, submit maker-checker decisions.</p><a href="approvals.html">Open Approvals</a></div>
+          <div class="panel"><h3>Reports and Exports</h3><p>Build reports, apply masking, route high-risk exports, preserve regulatory trace.</p><a href="reports.html">Open Reports</a></div>
+          <div class="panel"><h3>Observability and AI</h3><p>Monitor connector health, recover degraded dependencies, supervise AI policy and override behavior.</p><a href="integration.html">Open Integrations</a></div>
+        </div>
+      </section>
+      <section id="journeys" class="panel page-section">
+        <div class="section-title"><h2>Core Journey Flow</h2><span class="badge success">Queue to decision</span></div>
+        <div class="flow-steps">
+          <div class="step active"><strong>1. Find or create context</strong><span>Customer search, case queue, onboarding queue, portal status.</span></div>
+          <div class="step active"><strong>2. Capture work and evidence</strong><span>Forms, wizard steps, document management, evidence bundles.</span></div>
+          <div class="step active"><strong>3. Resolve blocks</strong><span>Missing items, policy holds, degraded connector recovery.</span></div>
+          <div class="step"><strong>4. Govern decision</strong><span>Maker-checker, export approval, AI advisory trace, activation gates.</span></div>
+        </div>
+        <table>
+          <thead><tr><th>Journey</th><th>Start surface</th><th>Decision or outcome</th><th>Prototype path</th></tr></thead>
+          <tbody>
+            <tr><td>Customer onboarding</td><td>Onboarding Activity Queue</td><td>KYC approval or blocked missing item</td><td><a href="onboarding.html#activity-queue">Queue</a> to <a href="onboarding.html#submission">Submission</a></td></tr>
+            <tr><td>Complaint recovery</td><td>Case Queue</td><td>Closure approval or escalation</td><td><a href="cases.html#case-queue">Queue</a> to <a href="approvals.html#decision-form">Decision</a></td></tr>
+            <tr><td>Sensitive reveal</td><td>Customer 360</td><td>AccessDecisionTrace and checker review</td><td><a href="customers.html#reveal-control">Reveal</a> to <a href="approvals.html#approval-detail">Approval</a></td></tr>
+            <tr><td>Connector recovery</td><td>Integration Health</td><td>Idempotent replay or manual path</td><td><a href="integration.html#health">Health</a> to <a href="integration.html#recovery">Recovery</a></td></tr>
+            <tr><td>Customer self-service</td><td>Portal Status</td><td>Upload, request, or secure message</td><td><a href="portal.html#status">Status</a> to <a href="portal.html#upload">Upload</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="acceptance" class="panel page-section">
+        <div class="section-title"><h2>Acceptance Themes</h2><span class="badge info">Across 86 parsed full stories</span></div>
+        <table>
+          <thead><tr><th>Theme</th><th>Definition of done</th><th>Where visible</th></tr></thead>
+          <tbody>
+            <tr><td>Actor and tenant scope</td><td>Records and actions are visible only to valid roles and scopes.</td><td>All internal pages</td></tr>
+            <tr><td>Evidence continuity</td><td>Governed actions show evidence bundle state before progression.</td><td>Cases, onboarding, approvals, reports</td></tr>
+            <tr><td>Maker-checker</td><td>Proposer cannot approve own governed action; rationale required.</td><td>Approvals, case closure, onboarding approval</td></tr>
+            <tr><td>Masked identity</td><td>NIN, BVN, DOB, and sensitive fields remain masked until reveal trace.</td><td>Customers, onboarding, approvals</td></tr>
+            <tr><td>Degraded mode</td><td>Failed or stale connectors show visible recovery path and do not change business truth silently.</td><td>Workbench, integrations, onboarding, cases</td></tr>
+            <tr><td>AI boundary</td><td>AI is advisory only and records policy, model, instruction, guardrail, and override lineage.</td><td>AI Command, Customer 360</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="screen-coverage" class="panel page-section">
+        <div class="section-title"><h2>Prototype Coverage</h2><span class="badge success">12 pages</span></div>
+        <table>
+          <thead><tr><th>HTML page</th><th>Covered experience</th><th>Key PM check</th></tr></thead>
+          <tbody>
+            <tr><td><a href="index.html">Workbench</a></td><td>Role-aware operational landing</td><td>Queue, governance alerts, dependency health, next handoff.</td></tr>
+            <tr><td><a href="customers.html">Customers</a></td><td>Search, 360, activity, reveal, AI sidebar</td><td>Masked values and reveal trace path are explicit.</td></tr>
+            <tr><td><a href="cases.html">Cases</a></td><td>Queue, creation, detail, recovery, escalation</td><td>Service starts from queue and evidence blocks closure.</td></tr>
+            <tr><td><a href="onboarding.html">Onboarding</a></td><td>Activity queue, documents, journey, wizard, missing items, submission</td><td>Onboarding no longer starts too deep in detail.</td></tr>
+            <tr><td><a href="approvals.html">Approvals</a></td><td>Queue, holds, detail, evidence, decision</td><td>Evidence-first maker-checker review.</td></tr>
+            <tr><td><a href="reports.html">Reports</a></td><td>KPI, report builder, export run, regulatory trace</td><td>Export output held until masking and approval pass.</td></tr>
+            <tr><td><a href="tenant-runtime.html">Tenant Runtime</a></td><td>Conformance, roles, flags, connectors, readiness, watch</td><td>Tenant settings cannot override shared governance.</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="gaps" class="panel page-section">
+        <div class="section-title"><h2>Source Reconciliation Note</h2><span class="badge warning">Important</span></div>
+        <p>The PM documentation pack now records that the source declares 114 promoted screens. The parsed text exposed 113 unique screen IDs, 105 screen headings with routes/layouts, and 86 full story blocks. Screens without full parsed story text are marked for manual reconciliation against the original source before sprint commitment.</p>
+        <div class="banner info"><strong>Practical use:</strong><span>Use the prototype for understanding the product flow; use the PM documentation pack for story-level grooming and gap reconciliation.</span></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>
