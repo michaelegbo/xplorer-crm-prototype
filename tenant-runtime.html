@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tenant Runtime and Activation - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a class="active" href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Tenant Runtime</div>
+        <div class="top-actions"><span class="status-dot"></span> Conformance envelope enforced</div>
+      </div>
+      <div class="top-actions"><span>Tenant Implementation Lead</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Tenant Runtime and Activation</h1><p class="lead">Tenant configuration must vary only inside the approved conformance envelope: roles, feature flags, endpoints, thresholds, branding, readiness, and activation watch.</p></div>
+        <div class="toolbar"><a class="button primary" href="#readiness">Readiness check</a><a class="button " href="#role-mapping">Role mapping</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#conformance">Conformance</a><a href="#role-mapping">Roles</a><a href="#feature-flags">Feature flags</a><a href="#connectors">Connectors</a><a href="#readiness">Readiness</a><a href="#activation-watch">Watch</a></nav>
+      <section id="conformance" class="panel page-section">
+        <div class="section-title"><h2>Tenant Conformance Workspace</h2><span class="badge info">SCR-110</span></div>
+        <div class="mini-grid"><div><span class="label">Tenant</span><strong>GoTech pilot</strong></div><div><span class="label">Sector baseline</span><strong>Financial Services approved</strong></div><div><span class="label">Conformance state</span><strong>Draft</strong></div><div><span class="label">Activation target</span><strong>Under 5 business days</strong></div></div>
+      </section>
+      <section id="role-mapping" class="panel page-section">
+        <div class="section-title"><h2>Role Mapping Table</h2><span class="badge warning">Protected semantics</span></div>
+        <table><thead><tr><th>Tenant role</th><th>Platform role family</th><th>Interaction posture</th><th>Approval needed</th></tr></thead><tbody><tr><td>Branch Service Officer</td><td>Service Operator</td><td>Enabled</td><td><span class="badge success">No</span></td></tr><tr><td>Compliance Reviewer</td><td>Compliance Officer</td><td>Enabled</td><td><span class="badge warning">SoD check</span></td></tr><tr><td>Tenant Super Admin</td><td>Platform Admin</td><td>Restricted</td><td><span class="badge critical">Protected change</span></td></tr></tbody></table>
+      </section>
+      <section id="feature-flags" class="panel page-section">
+        <div class="section-title"><h2>Feature Flags and Thresholds</h2><span class="badge info">ConfigShell</span></div>
+        <div class="status-list"><div><span>AI advisory runtime</span><span class="badge success">Enabled</span></div><div><span>Bulk export approval threshold</span><span>5,000 rows</span></div><div><span>Connector degraded visibility</span><span class="badge success">Enabled</span></div><div><span>Shared security override</span><span class="badge critical">Not permitted</span></div></div>
+      </section>
+      <section id="connectors" class="panel page-section">
+        <div class="section-title"><h2>Endpoint Binding Console</h2><span class="badge info">Tenant scoped</span></div>
+        <table><thead><tr><th>Connector</th><th>Endpoint posture</th><th>Secret state</th><th>Health</th></tr></thead><tbody><tr><td>BVN Verify</td><td>Sandbox to production pending</td><td><span class="badge success">Managed secret</span></td><td><span class="badge warning">Degraded</span></td></tr><tr><td>WhatsApp Business</td><td>Production</td><td><span class="badge success">Managed secret</span></td><td><span class="badge success">Healthy</span></td></tr></tbody></table>
+      </section>
+      <section id="readiness" class="panel page-section">
+        <div class="section-title"><h2>Activation Readiness Gate</h2><span class="badge warning">SCR-113</span></div>
+        <div class="checklist"><label><input type="checkbox" checked> Sector baseline approved</label><label><input type="checkbox" checked> Role mappings validated</label><label><input type="checkbox"> Connector degraded issue resolved</label><label><input type="checkbox" checked> Feature flags reviewed</label><label><input type="checkbox"> Compliance sponsor sign-off</label></div>
+        <div class="banner critical"><strong>Activation blocked:</strong><span>Outstanding connector and sponsor sign-off items must be cleared.</span></div>
+      </section>
+      <section id="activation-watch" class="panel page-section">
+        <div class="section-title"><h2>Activation Watch</h2><span class="badge info">Post-launch control</span></div>
+        <div class="flow-steps"><div class="step active"><strong>Day 1</strong><span>Access validation</span></div><div class="step active"><strong>Day 2</strong><span>Connector monitoring</span></div><div class="step"><strong>Day 3</strong><span>Workflow failures</span></div><div class="step"><strong>Day 5</strong><span>Close-watch decision</span></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

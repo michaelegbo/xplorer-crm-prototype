@@ -1,5 +1,95 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Maker-Checker Approvals - Xplorer CRM</title><link rel="stylesheet" href="styles.css"></head>
-<body><div class="app-shell"><aside class="side"><a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a><nav class="nav"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a class="active" href="approvals.html">Approvals</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav><div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div></aside><section class="main"><header class="topbar"><div><div class="crumb">Xplorer / Approvals</div><div class="top-actions"><span class="status-dot"></span> Self-approval blocked</div></div><div class="top-actions"><span>Compliance Officer</span><span class="badge info">R1</span></div></header><main class="page"><div class="page-head"><div><h1>Maker-Checker Approvals</h1><p class="lead">Evidence-first approval review with rationale, separation of duties, immutable decisions, and policy hold visibility.</p></div><div class="toolbar"><a class="button" href="cases.html">Case queue</a><a class="button primary" href="integration.html">Check evidence</a></div></div><div class="grid"><section class="panel"><h2>Approval Queue</h2><table><thead><tr><th>Approval</th><th>Subject</th><th>Type</th><th>Risk</th><th>Status</th></tr></thead><tbody><tr><td class="mono">APR-3314</td><td>Oluwaseun Ade</td><td>Sensitive reveal</td><td><span class="badge warning">Medium</span></td><td>Checker required</td></tr><tr><td class="mono">APR-3308</td><td>Kano Traders Ltd</td><td>KYC clearance</td><td><span class="badge critical">High</span></td><td>Evidence review</td></tr><tr><td class="mono">APR-3299</td><td>CASE-1027</td><td>Complaint closure</td><td><span class="badge info">Routine</span></td><td>Pending rationale</td></tr></tbody></table></section><aside class="panel"><h2>Approval Detail</h2><p><strong>APR-3314</strong> - sensitive field reveal request</p><p>Proposer: Service Operator. Checker: Compliance Officer. Self-approval is blocked server-side.</p><div class="banner critical"><strong>Decision control</strong><span>Rationale required. ApprovalDecisionRecord becomes immutable after write.</span></div><div class="field"><label>Decision rationale</label><textarea class="textarea" placeholder="Enter at least 20 characters"></textarea></div><div class="toolbar"><a class="button primary" href="customers.html">Approve</a><a class="button danger" href="approvals.html">Reject</a></div></aside></div><p class="footer-note">Approval screens represent SCR-031 queue and SCR-032 approval-detail patterns.</p></main></section></div></body></html>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Approvals and Policy Holds - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a class="active" href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Approvals</div>
+        <div class="top-actions"><span class="status-dot"></span> Maker-checker and policy holds active</div>
+      </div>
+      <div class="top-actions"><span>Compliance Officer</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Approvals and Policy Holds</h1><p class="lead">Approval work starts with queue and hold lists, then opens evidence-first review and a governed maker-checker decision form.</p></div>
+        <div class="toolbar"><a class="button primary" href="#approval-detail">Open selected review</a><a class="button " href="#policy-holds">Policy holds</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#approval-queue">Approval queue</a><a href="#policy-holds">Policy holds</a><a href="#approval-detail">Approval detail</a><a href="#evidence-drawer">Evidence drawer</a><a href="#decision-form">Decision form</a></nav>
+      <section id="approval-queue" class="panel page-section">
+        <div class="section-title"><div><h2>Maker-Checker Approval Queue</h2><p>SCR-031 list surface. Reviewers choose work from a queue before decision detail.</p></div><span class="badge info">ListShell</span></div>
+        <table>
+          <thead><tr><th>Approval</th><th>Subject</th><th>Type</th><th>Proposer</th><th>Risk</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">APR-3314</td><td>Oluwaseun Ade</td><td>Sensitive reveal</td><td>Service Operator</td><td><span class="badge warning">Medium</span></td><td>Checker required</td><td><a href="#approval-detail">Review</a></td></tr>
+            <tr><td class="mono">APR-3308</td><td>Kano Traders Ltd</td><td>KYC clearance</td><td>Branch Officer</td><td><span class="badge critical">High</span></td><td>Evidence review</td><td><a href="#approval-detail">Review</a></td></tr>
+            <tr><td class="mono">APR-3299</td><td>CASE-1027</td><td>Complaint closure</td><td>Service Lead</td><td><span class="badge info">Routine</span></td><td>Pending rationale</td><td><a href="#approval-detail">Review</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="policy-holds" class="panel page-section">
+        <div class="section-title"><h2>Policy Hold List</h2><span class="badge warning">SCR-034</span></div>
+        <table>
+          <thead><tr><th>Hold</th><th>Subject</th><th>Reason</th><th>Holding actor</th><th>Elapsed</th><th>Resolution path</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">HLD-721</td><td>ONB-8821</td><td>Beneficial ownership evidence missing</td><td>Compliance Officer</td><td>1d 2h</td><td><a href="onboarding.html#missing-items">Resolve evidence</a></td></tr>
+            <tr><td class="mono">HLD-718</td><td>APR-3314</td><td>Lawful basis needs checker validation</td><td>Supervisor</td><td>4h</td><td><a href="#approval-detail">Review reveal</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="approval-detail" class="page-section detail-layout">
+        <div class="panel">
+          <div class="record-header">
+            <div><span class="mono">APR-3314</span><h2>Sensitive Field Reveal Request</h2><p>Checker: Compliance Officer. Proposer: Service Operator.</p></div>
+            <span class="badge warning">Rationale required</span>
+          </div>
+          <div class="mini-grid">
+            <div><span class="label">Approval type</span><strong>Reveal-controlled surface</strong></div>
+            <div><span class="label">Separation of duties</span><strong>Self-approval blocked</strong></div>
+            <div><span class="label">Evidence status</span><strong>Bundle complete</strong></div>
+            <div><span class="label">Decision record</span><strong>Immutable after write</strong></div>
+          </div>
+          <div class="grid inner">
+            <section><h3>Proposer Summary</h3><p>Service operator requested temporary reveal of masked BVN for active complaint verification. Lawful basis: service recovery.</p></section>
+            <section><h3>Review Requirements</h3><div class="status-list"><div><span>Evidence bundle</span><span class="badge success">Complete</span></div><div><span>Lawful basis</span><span class="badge info">Declared</span></div><div><span>Proposer != checker</span><span class="badge success">Passed</span></div></div></section>
+          </div>
+        </div>
+        <aside class="panel sticky-card">
+          <h2>Decision Controls</h2>
+          <div class="banner critical"><strong>Server enforced</strong><span>SELF_APPROVAL_PROHIBITED if proposer equals checker.</span></div>
+          <a class="button" href="#evidence-drawer">Review evidence</a>
+          <a class="button primary" href="#decision-form">Open decision form</a>
+        </aside>
+      </section>
+      <section id="evidence-drawer" class="panel page-section">
+        <div class="section-title"><h2>Governed Bundle Viewer Drawer</h2><span class="badge info">ISF-004</span></div>
+        <table><thead><tr><th>Evidence</th><th>Source</th><th>Checksum</th><th>Status</th></tr></thead><tbody><tr><td>Complaint transcript</td><td>Contact center</td><td class="mono">sha256:9f2...</td><td><span class="badge success">Verified</span></td></tr><tr><td>Customer consent state</td><td>Consent service</td><td class="mono">sha256:a88...</td><td><span class="badge success">Verified</span></td></tr><tr><td>Reveal rationale</td><td>Service desk</td><td class="mono">sha256:411...</td><td><span class="badge info">Attached</span></td></tr></tbody></table>
+      </section>
+      <section id="decision-form" class="panel page-section decision-grid">
+        <div>
+          <h2>Maker-Checker Decision Form</h2>
+          <p>ISF-005 submits APPROVED, REJECTED, or ESCALATED with mandatory rationale.</p>
+          <div class="field"><label>Decision</label><select class="select"><option>Approve</option><option>Reject</option><option>Escalate</option></select></div>
+          <div class="field"><label>Rationale</label><textarea class="textarea">Evidence reviewed. Reveal is limited to the active complaint verification context.</textarea></div>
+        </div>
+        <aside><div class="banner"><strong>Immutable write</strong><span>No undo after ApprovalDecisionRecord is created.</span></div><a class="button primary" href="customers.html#customer-360">Submit decision</a></aside>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

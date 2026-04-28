@@ -1,5 +1,62 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Xplorer Style Guide - Xplorer CRM</title><link rel="stylesheet" href="styles.css"></head>
-<body><div class="app-shell"><aside class="side"><a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a><nav class="nav"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="portal.html">Portal</a><a class="active" href="style-guide.html">Style Guide</a></nav><div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div></aside><section class="main"><header class="topbar"><div><div class="crumb">Xplorer / Style Guide</div><div class="top-actions"><span class="status-dot"></span> XDS v2 palette</div></div><div class="top-actions"><span>Design Reviewer</span><span class="badge info">R1</span></div></header><main class="page"><div class="page-head"><div><h1>Xplorer Style Guide</h1><p class="lead">Condensed XDS palette, state, and component rules used by the static screens.</p></div><div class="toolbar"><a class="button primary" href="index.html">Open prototype</a></div></div><section class="cards"><div class="panel"><div class="swatch" style="background:#07162f"></div><strong>Abyss Navy</strong><br><span class="mono">#07162F</span></div><div class="panel"><div class="swatch" style="background:#315efb"></div><strong>Royal Cobalt</strong><br><span class="mono">#315EFB</span></div><div class="panel"><div class="swatch" style="background:#eaf0ff"></div><strong>Selection Tint</strong><br><span class="mono">#EAF0FF</span></div></section><div class="grid"><section class="panel"><h2>Component Rules</h2><table><thead><tr><th>Component</th><th>Rule</th></tr></thead><tbody><tr><td>Approval actions</td><td>Require evidence, rationale, clear decision state, and separation-of-duties warning.</td></tr><tr><td>Masked values</td><td>Remain masked until reveal trace is written.</td></tr><tr><td>Degraded mode</td><td>Persistent banner until resolved or routed onward.</td></tr><tr><td>AI recommendation</td><td>Advisory only; no autonomous regulated decision.</td></tr></tbody></table></section><aside class="panel"><h2>States</h2><p><span class="badge success">Complete</span> <span class="badge warning">Pending</span> <span class="badge critical">Blocked</span> <span class="badge info">Review</span></p><div class="field"><label>Input field</label><input class="input" value="Governed form value"></div><a class="button primary" href="index.html">Primary action</a> <a class="button" href="index.html">Secondary</a></aside></div><p class="footer-note">Style guide is a condensed static reference, not a full replacement for XDS.</p></main></section></div></body></html>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style Guide and Prototype Map - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a class="active" href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Style Guide</div>
+        <div class="top-actions"><span class="status-dot"></span> XDS v2 tokens and archetypes applied</div>
+      </div>
+      <div class="top-actions"><span>Design Reviewer</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Style Guide and Prototype Map</h1><p class="lead">Condensed reference for the static prototype: color, states, archetypes, governed surfaces, and page-to-screen traceability.</p></div>
+        <div class="toolbar"><a class="button primary" href="index.html">Open workbench</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#tokens">Tokens</a><a href="#archetypes">Archetypes</a><a href="#states">States</a><a href="#surfaces">Surfaces</a><a href="#map">Prototype map</a></nav>
+      <section id="tokens" class="cards page-section">
+        <div class="panel"><div class="swatch" style="background:#07162f"></div><strong>Abyss Navy</strong><br><span class="mono">#07162F</span></div>
+        <div class="panel"><div class="swatch" style="background:#315efb"></div><strong>Royal Cobalt</strong><br><span class="mono">#315EFB</span></div>
+        <div class="panel"><div class="swatch" style="background:#eaf0ff"></div><strong>Selection Tint</strong><br><span class="mono">#EAF0FF</span></div>
+        <div class="panel"><div class="swatch" style="background:#127a54"></div><strong>Success</strong><br><span class="mono">#127A54</span></div>
+        <div class="panel"><div class="swatch" style="background:#9a5d00"></div><strong>Warning</strong><br><span class="mono">#9A5D00</span></div>
+        <div class="panel"><div class="swatch" style="background:#b42318"></div><strong>Critical</strong><br><span class="mono">#B42318</span></div>
+      </section>
+      <section id="archetypes" class="panel page-section">
+        <div class="section-title"><h2>Screen Archetypes</h2><span class="badge info">UX spec</span></div>
+        <table><thead><tr><th>Archetype</th><th>Used here</th><th>Required pattern</th></tr></thead><tbody><tr><td>ARCH-DASH</td><td>Workbench, AI, Integrations, Reports</td><td>KPI strip, queue, alerts, action rail</td></tr><tr><td>ARCH-LIST</td><td>Customers, cases, approvals, onboarding queues</td><td>Filters, table, state coverage, row action</td></tr><tr><td>ARCH-DETAIL</td><td>Customer 360, case detail, portal status</td><td>Sticky header, tabs, timeline, context rail</td></tr><tr><td>ARCH-WIZARD</td><td>Onboarding KYC</td><td>Stepper, partial save, missing item panel</td></tr><tr><td>ARCH-APPROVAL</td><td>Approvals, escalation, closure</td><td>Evidence first, proposer summary, rationale, decision controls</td></tr></tbody></table>
+      </section>
+      <section id="states" class="panel page-section">
+        <div class="section-title"><h2>State Vocabulary</h2><span class="badge info">Visible and actionable</span></div>
+        <p><span class="badge success">Complete</span> <span class="badge warning">Pending</span> <span class="badge critical">Blocked</span> <span class="badge info">Review</span></p>
+        <div class="banner critical"><strong>Blocked actions</strong><span>Must explain the reason and recovery path.</span></div>
+      </section>
+      <section id="surfaces" class="panel page-section">
+        <div class="section-title"><h2>Governed Interaction Surfaces</h2><span class="badge warning">Not silent inline actions</span></div>
+        <table><thead><tr><th>Surface</th><th>Where shown</th><th>Purpose</th></tr></thead><tbody><tr><td>ISF-001 Consent Capture Drawer</td><td>Onboarding, cases</td><td>Purpose-specific consent capture</td></tr><tr><td>ISF-002 Sensitive Field Reveal Modal</td><td>Customers, approvals</td><td>Trace before reveal</td></tr><tr><td>ISF-004 Bundle Viewer Drawer</td><td>Cases, onboarding, approvals</td><td>Evidence inspection</td></tr><tr><td>ISF-005 Maker-Checker Decision Form</td><td>Approvals</td><td>Approve, reject, or escalate with rationale</td></tr><tr><td>ISF-008 Connector Recovery Confirmation</td><td>Integrations, cases</td><td>Retry or replay with idempotency</td></tr><tr><td>ISF-010 Degraded Mode Acknowledgement</td><td>Integrations, workbench</td><td>Visible stale-source posture</td></tr></tbody></table>
+      </section>
+      <section id="map" class="panel page-section">
+        <div class="section-title"><h2>Prototype Map</h2><span class="badge success">Reworked</span></div>
+        <table><thead><tr><th>Page</th><th>Primary source screens</th></tr></thead><tbody><tr><td><a href="index.html">Workbench</a></td><td>SCR-001 Operator Role Workbench</td></tr><tr><td><a href="customers.html">Customers</a></td><td>SCR-011, SCR-012, SCR-013, SCR-016, ISF-002, ISF-007</td></tr><tr><td><a href="cases.html">Cases</a></td><td>SCR-020, SCR-021, SCR-022, SCR-024, SCR-025</td></tr><tr><td><a href="onboarding.html">Onboarding</a></td><td>SCR-008, SCR-041, SCR-042, SCR-043, SCR-048, SCR-050</td></tr><tr><td><a href="approvals.html">Approvals</a></td><td>SCR-031, SCR-032 variants, SCR-034, ISF-004, ISF-005</td></tr><tr><td><a href="reports.html">Reports</a></td><td>Analytics, report builder, export operations, regulatory submissions</td></tr><tr><td><a href="integration.html">Integrations</a></td><td>SCR-004, SCR-078, SCR-081, SCR-094, SCR-114</td></tr><tr><td><a href="ai.html">AI Command</a></td><td>SCR-003, SCR-079, SCR-080, XPLR-AIRC-001</td></tr><tr><td><a href="tenant-runtime.html">Tenant Runtime</a></td><td>SCR-110, SCR-111, SCR-113, activation watch</td></tr><tr><td><a href="portal.html">Portal</a></td><td>SCR-087, SCR-088, SCR-089, SCR-090</td></tr></tbody></table>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

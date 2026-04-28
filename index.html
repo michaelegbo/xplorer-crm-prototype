@@ -10,22 +10,71 @@
 <div class="app-shell">
   <aside class="side">
     <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="active" href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a>
-    </nav>
+    <nav class="nav" aria-label="Primary navigation"><a class="active" href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav>
     <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
   </aside>
   <section class="main">
-    <header class="topbar"><div><div class="crumb">Xplorer / Workbench</div><div class="top-actions"><span class="status-dot"></span> Operational baseline active</div></div><div class="top-actions"><span>Commercial Operator</span><span class="badge info">R1</span></div></header>
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Workbench</div>
+        <div class="top-actions"><span class="status-dot"></span> Role-aware work queues active</div>
+      </div>
+      <div class="top-actions"><span>Commercial Operator</span><span class="badge info">R1</span></div>
+    </header>
     <main class="page">
-      <div class="page-head"><div><h1>Operator Role Workbench</h1><p class="lead">Role-aware landing screen for queues, tasks, KPI summary, governance alerts, and advisory AI.</p></div><div class="toolbar"><a class="button" href="style-guide.html">Style guide</a><a class="button primary" href="approvals.html">Review queue</a></div></div>
-      <div class="banner info"><strong>Role-aware workbench:</strong><span>Queue, tasks, KPI summary, governance alerts, and advisory AI are visible from login.</span></div>
-      <section class="kpis"><div class="kpi"><div class="label">Active cases</div><div class="value">128</div><span class="badge warning">14 due soon</span></div><div class="kpi"><div class="label">Onboarding in review</div><div class="value">36</div><span class="badge info">8 missing items</span></div><div class="kpi"><div class="label">Connector health</div><div class="value">92%</div><span class="badge warning">1 degraded</span></div><div class="kpi"><div class="label">AI advisories</div><div class="value">47</div><span class="badge success">0 auto-actions</span></div></section>
-      <div class="grid"><section class="panel"><h2>Assigned Work Queue</h2><table><thead><tr><th>Ref</th><th>Customer</th><th>Work type</th><th>State</th><th>SLA</th><th>Next action</th></tr></thead><tbody><tr><td class="mono">CASE-1048</td><td>Amina Bello</td><td>Complaint recovery</td><td><span class="badge warning">Pending evidence</span></td><td>4h 12m</td><td><a href="cases.html">Open case</a></td></tr><tr><td class="mono">ONB-8821</td><td>Kano Traders Ltd</td><td>Corporate KYC</td><td><span class="badge critical">Policy hold</span></td><td>1d</td><td><a href="onboarding.html">Review KYC</a></td></tr><tr><td class="mono">APR-3314</td><td>Oluwaseun Ade</td><td>Reveal request</td><td><span class="badge info">Checker needed</span></td><td>Today</td><td><a href="approvals.html">Review</a></td></tr></tbody></table></section><aside class="panel"><h2>Advisory AI</h2><div class="banner"><strong>Advisory only</strong><span>Recommendation cannot approve, submit, reveal, or close work.</span></div><p><strong>Suggested next step:</strong> route ONB-8821 to compliance reviewer after missing beneficial ownership document is uploaded.</p><p><span class="badge info">Human review required</span></p><a class="button" href="ai.html">View AI trace</a><h3>System Health</h3><div class="timeline"><div class="event"><strong>BVN connector stale</strong><span class="badge warning">Degraded</span></div><div class="event"><strong>Notification queue</strong><span class="badge success">Healthy</span></div></div></aside></div>
-      <p class="footer-note">Static prototype generated from Xplorer PRD, Blueprint, UX, and Design System sources. No backend actions are executed.</p>
+      <div class="page-head">
+        <div><h1>Operator Role Workbench</h1><p class="lead">The landing surface shows assigned work, risk, dependency health, approvals, and advisory AI without hiding blocked states.</p></div>
+        <div class="toolbar"><a class="button primary" href="onboarding.html">Open onboarding</a><a class="button " href="approvals.html">Review approvals</a></div>
+      </div>
+      
+      <div class="banner info"><strong>Today:</strong><span>BVN verification is degraded. Customer and onboarding screens show stale-source warnings until recovery completes.</span></div>
+      <section class="kpis"><div class="kpi"><div class="label">Assigned cases</div><div class="value">128</div><span class="badge warning">14 due soon</span></div><div class="kpi"><div class="label">Onboarding journeys</div><div class="value">36</div><span class="badge critical">8 blocked</span></div><div class="kpi"><div class="label">Approval queue</div><div class="value">22</div><span class="badge warning">6 high risk</span></div><div class="kpi"><div class="label">AI advisories</div><div class="value">47</div><span class="badge success">advisory only</span></div></section>
+      <nav class="page-tabs" aria-label="Page sections"><a href="#work-queue">Work queue</a><a href="#governance">Governance</a><a href="#dependency">Dependency health</a><a href="#handoff">Next handoff</a></nav>
+      <section id="work-queue" class="panel page-section">
+        <div class="section-title"><div><h2>Assigned Work Queue</h2><p>Queue first, then detail. Each action routes to its owning module surface.</p></div><span class="badge info">Actor scoped</span></div>
+        <table>
+          <thead><tr><th>Reference</th><th>Customer</th><th>Work type</th><th>State</th><th>SLA</th><th>Next action</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">CASE-1048</td><td>Amina Bello</td><td>Complaint recovery</td><td><span class="badge warning">Pending evidence</span></td><td>4h 12m</td><td><a href="cases.html#case-detail">Open case</a></td></tr>
+            <tr><td class="mono">ONB-8821</td><td>Kano Traders Ltd</td><td>Corporate KYC</td><td><span class="badge critical">Policy hold</span></td><td>1d</td><td><a href="onboarding.html#journey-detail">Open journey</a></td></tr>
+            <tr><td class="mono">APR-3314</td><td>Oluwaseun Ade</td><td>Reveal request</td><td><span class="badge info">Checker needed</span></td><td>Today</td><td><a href="approvals.html#approval-detail">Review</a></td></tr>
+            <tr><td class="mono">RPT-2190</td><td>Compliance pack</td><td>Masked export</td><td><span class="badge warning">Approval threshold</span></td><td>Tomorrow</td><td><a href="reports.html#export-run">Open export</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="grid">
+        <section id="governance" class="panel page-section">
+          <h2>Governance Alerts</h2>
+          <div class="list-stack">
+            <div class="row-card"><strong>Self-approval check active</strong><span>5 maker-checker requests are waiting for a different reviewer.</span><a href="approvals.html">Open approvals</a></div>
+            <div class="row-card"><strong>Evidence bundle incomplete</strong><span>ONB-8821 cannot submit until beneficial ownership evidence is attached.</span><a href="onboarding.html#missing-items">Resolve missing item</a></div>
+            <div class="row-card"><strong>Export masking threshold</strong><span>High-volume report requires checker approval before release.</span><a href="reports.html#export-run">Review export run</a></div>
+          </div>
+        </section>
+        <aside id="dependency" class="panel page-section">
+          <h2>Dependency Health</h2>
+          <div class="status-list">
+            <div><span>BVN Verify</span><span class="badge warning">Degraded</span></div>
+            <div><span>WhatsApp Business</span><span class="badge success">Healthy</span></div>
+            <div><span>Regulatory SFTP</span><span class="badge success">Healthy</span></div>
+            <div><span>AI policy runtime</span><span class="badge info">Review queue</span></div>
+          </div>
+          <a class="button primary" href="integration.html#recovery">Open recovery</a>
+        </aside>
+      </div>
+      <section id="handoff" class="panel page-section">
+        <div class="section-title"><div><h2>Next Handoff</h2><p>Operational next steps stay visible across workbench, queue, and detail pages.</p></div><span class="badge success">Traceable</span></div>
+        <div class="flow-steps">
+          <div class="step active"><strong>1. Queue triage</strong><span>Prioritize SLA and blocked state.</span></div>
+          <div class="step active"><strong>2. Evidence completion</strong><span>Attach or request missing proof.</span></div>
+          <div class="step"><strong>3. Checker review</strong><span>Route to maker-checker where required.</span></div>
+          <div class="step"><strong>4. Outcome notification</strong><span>Consent-gated channel dispatch.</span></div>
+        </div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
     </main>
   </section>
 </div>
 </body>
 </html>
-

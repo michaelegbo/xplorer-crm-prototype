@@ -1,5 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Customer Status Portal - Xplorer CRM</title><link rel="stylesheet" href="styles.css"></head>
-<body><div class="app-shell"><aside class="side"><a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a><nav class="nav"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a class="active" href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav><div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div></aside><section class="main"><header class="topbar"><div><div class="crumb">Xplorer / Portal</div><div class="top-actions"><span class="status-dot"></span> Own-record scope only</div></div><div class="top-actions"><span>Customer Portal User</span><span class="badge info">R1</span></div></header><main class="page"><div class="page-head"><div><h1>Customer Status Portal</h1><p class="lead">Customer-safe own-record status, upload, required action, and secure messaging flow.</p></div><div class="toolbar"><a class="button" href="index.html">Internal view</a><a class="button primary" href="portal.html">Upload document</a></div></div><div class="grid"><section class="panel"><h2>Request Status</h2><p><strong>Amina Bello</strong><br>Own-record portal scope only.</p><div class="steps"><div class="step"><strong>Request received</strong><br><span class="badge success">Complete</span></div><div class="step active"><strong>Evidence needed</strong><br><span class="badge warning">Action required</span></div><div class="step"><strong>Review</strong><br><span class="badge info">Pending</span></div><div class="step"><strong>Decision</strong><br><span class="badge info">Not started</span></div></div><h3>Required action</h3><div class="banner"><strong>Upload proof of address</strong><span>Accepted file types: PDF, PNG, JPG.</span></div><a class="button primary" href="portal.html">Upload document</a></section><aside class="panel"><h2>Secure Messaging</h2><div class="timeline"><div class="event"><strong>Bank message</strong>Your request is awaiting one document.</div><div class="event"><strong>You</strong>I will upload the proof today.</div></div><div class="field"><label>Reply</label><textarea class="textarea" placeholder="Write secure message"></textarea></div><a class="button" href="portal.html">Send message</a></aside></div><p class="footer-note">Portal screen represents SCR-087 Customer Status Portal and related self-service surfaces.</p></main></section></div></body></html>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Portal - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a class="active" href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Portal</div>
+        <div class="top-actions"><span class="status-dot"></span> Own-record customer scope only</div>
+      </div>
+      <div class="top-actions"><span>Customer Portal User</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Customer Portal</h1><p class="lead">The portal is a simpler trust domain for own-record status, request submission, document upload, secure messages, and consent history.</p></div>
+        <div class="toolbar"><a class="button primary" href="#new-request">New request</a><a class="button " href="#upload">Upload document</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#status">Status</a><a href="#new-request">Request</a><a href="#upload">Upload</a><a href="#messages">Messages</a><a href="#consent">Consent</a></nav>
+      <section id="status" class="panel page-section">
+        <div class="section-title"><div><h2>Customer Status Portal</h2><p>SCR-087. Customer sees only their own case and request status.</p></div><span class="badge success">Own-record scope</span></div>
+        <div class="record-header"><div><span class="mono">PORTAL-REQ-518</span><h2>Proof of Address Request</h2><p>Amina Bello - onboarding evidence request</p></div><span class="badge warning">Action required</span></div>
+        <div class="flow-steps"><div class="step active"><strong>Request received</strong><span>Complete</span></div><div class="step active"><strong>Evidence needed</strong><span>Action required</span></div><div class="step"><strong>Review</strong><span>Pending</span></div><div class="step"><strong>Decision</strong><span>Not started</span></div></div>
+      </section>
+      <section id="new-request" class="panel page-section">
+        <div class="section-title"><h2>Customer Request Submission Form</h2><span class="badge info">SCR-088</span></div>
+        <div class="form-grid"><div class="field"><label>Request type</label><select class="select"><option>Service request</option><option>Complaint</option><option>Document update</option></select></div><div class="field"><label>Preferred channel</label><select class="select"><option>Secure portal</option><option>SMS status only</option></select></div><div class="field wide"><label>Description</label><textarea class="textarea">I need to update my address evidence for my onboarding request.</textarea></div></div>
+        <div class="toolbar"><a class="button" href="#status">Save draft</a><a class="button primary" href="#status">Submit request</a></div>
+      </section>
+      <section id="upload" class="panel page-section">
+        <div class="section-title"><h2>Document Upload Surface</h2><span class="badge warning">SCR-089</span></div>
+        <div class="banner"><strong>Required action:</strong><span>Upload proof of address. Accepted file types: PDF, PNG, JPG. Files become evidence metadata and object-storage records.</span></div>
+        <div class="form-grid"><div class="field"><label>Document type</label><select class="select"><option>Proof of address</option><option>Identity document</option><option>Business registration document</option></select></div><div class="field"><label>File selected</label><input class="input" value="utility-bill-april.pdf"></div></div>
+        <div class="toolbar"><a class="button" href="#status">Cancel</a><a class="button primary" href="#messages">Submit upload</a></div>
+      </section>
+      <section id="messages" class="panel page-section">
+        <div class="section-title"><h2>Secure Messaging</h2><span class="badge info">SCR-090</span></div>
+        <div class="timeline"><div class="event"><strong>GoTech service team</strong>Your onboarding request is awaiting proof of address.</div><div class="event"><strong>Amina Bello</strong>I uploaded the document today.</div><div class="event"><strong>GoTech service team</strong>Document received. Review is pending.</div></div>
+        <div class="field"><label>Reply</label><textarea class="textarea" placeholder="Write secure message"></textarea></div>
+        <a class="button primary" href="#messages">Send message</a>
+      </section>
+      <section id="consent" class="panel page-section">
+        <div class="section-title"><h2>Consent History</h2><span class="badge info">Customer visible</span></div>
+        <table><thead><tr><th>Purpose</th><th>Channel</th><th>State</th><th>Updated</th></tr></thead><tbody><tr><td>Service status</td><td>SMS</td><td><span class="badge success">Allowed</span></td><td>Yesterday</td></tr><tr><td>Document request</td><td>Portal</td><td><span class="badge success">Allowed</span></td><td>Today</td></tr><tr><td>Marketing</td><td>WhatsApp</td><td><span class="badge warning">Not granted</span></td><td>Never</td></tr></tbody></table>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

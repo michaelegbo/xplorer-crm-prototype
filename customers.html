@@ -1,5 +1,110 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Customer Search and 360 - Xplorer CRM</title><link rel="stylesheet" href="styles.css"></head>
-<body><div class="app-shell"><aside class="side"><a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a><nav class="nav"><a href="index.html">Workbench</a><a class="active" href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav><div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div></aside><section class="main"><header class="topbar"><div><div class="crumb">Xplorer / Customers</div><div class="top-actions"><span class="status-dot"></span> Consent and masking active</div></div><div class="top-actions"><span>Commercial Operator</span><span class="badge info">R1</span></div></header><main class="page"><div class="page-head"><div><h1>Customer Search and 360</h1><p class="lead">Search customer context with masked results, consent posture, duplicate handling, and governed reveal paths.</p></div><div class="toolbar"><a class="button" href="index.html">Workbench</a><a class="button primary" href="onboarding.html">Start onboarding</a></div></div><section class="panel"><h2>Customer Search</h2><div class="split"><div class="field"><label>Search name, ID, NIN, or BVN</label><input class="input" value="Amina"></div><div class="field"><label>Scope</label><select class="select"><option>Lagos branch and assigned portfolio</option></select></div></div><div class="toolbar"><a class="button primary" href="customers.html">Run search</a><a class="button" href="onboarding.html">Start onboarding</a></div></section><div class="grid"><section class="panel"><h2>Masked Results</h2><table><thead><tr><th>Customer</th><th>Status</th><th>Identity</th><th>Consent</th><th>Action</th></tr></thead><tbody><tr><td>Amina Bello</td><td><span class="badge success">Active</span></td><td class="mono">BVN ******42</td><td><span class="badge success">Valid</span></td><td><a href="cases.html">Open 360</a></td></tr><tr><td>Aminu Bello</td><td><span class="badge warning">Duplicate risk</span></td><td class="mono">NIN ******91</td><td><span class="badge warning">Limited</span></td><td><a href="approvals.html">Resolve</a></td></tr></tbody></table></section><aside class="panel"><h2>Customer 360 Snapshot</h2><p><strong>Amina Bello</strong><br>Retail banking customer<br><span class="mono">CUST-009184</span></p><div class="banner info"><strong>Masked field</strong><span>Reveal requires lawful basis and immutable access trace.</span></div><a class="button danger" href="approvals.html">Request reveal</a><h3>Recent activity</h3><div class="timeline"><div class="event"><strong>Complaint opened</strong> Debit card dispute - 2h ago</div><div class="event"><strong>Consent updated</strong> WhatsApp allowed - yesterday</div></div></aside></div><p class="footer-note">Customer screens represent SCR-011 Customer Search and SCR-013 Customer 360 patterns.</p></main></section></div></body></html>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customers and Customer 360 - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a class="active" href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Customers</div>
+        <div class="top-actions"><span class="status-dot"></span> Consent, masking, and duplicate checks active</div>
+      </div>
+      <div class="top-actions"><span>Commercial Operator</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Customers and Customer 360</h1><p class="lead">Search first, then inspect Customer 360 with masked identity, consent posture, relationship context, activity history, and governed reveal control.</p></div>
+        <div class="toolbar"><a class="button primary" href="onboarding.html#new-journey">Start onboarding</a><a class="button " href="cases.html#new-case">Create case</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#search">Search</a><a href="#customer-360">Customer 360</a><a href="#activity">Activity</a><a href="#reveal-control">Reveal control</a></nav>
+      <section id="search" class="panel page-section">
+        <div class="section-title"><div><h2>Customer Search</h2><p>SCR-011 starts with searchable, filterable, masked results.</p></div><span class="badge info">ListShell</span></div>
+        <div class="filters">
+          <div class="field"><label>Search name, ID, NIN, or BVN</label><input class="input" value="Amina"></div>
+          <div class="field"><label>Scope</label><select class="select"><option>Lagos branch and assigned portfolio</option></select></div>
+          <div class="field"><label>Customer status</label><select class="select"><option>All in scope</option><option>Active</option><option>Provisional</option><option>Duplicate risk</option></select></div>
+        </div>
+        <table>
+          <thead><tr><th>Customer</th><th>Status</th><th>Identity</th><th>Consent</th><th>Risk</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Amina Bello</td><td><span class="badge success">Active</span></td><td class="mono">BVN ******42</td><td><span class="badge success">Valid</span></td><td>Low</td><td><a href="#customer-360">Open 360</a></td></tr>
+            <tr><td>Aminu Bello</td><td><span class="badge warning">Duplicate risk</span></td><td class="mono">NIN ******91</td><td><span class="badge warning">Limited</span></td><td>Medium</td><td><a href="approvals.html#policy-holds">Resolve</a></td></tr>
+            <tr><td>Amina B. Holdings</td><td><span class="badge info">Provisional</span></td><td class="mono">RC ******08</td><td><span class="badge info">Pending</span></td><td>Medium</td><td><a href="onboarding.html#journey-detail">Open journey</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="customer-360" class="page-section detail-layout">
+        <div class="panel">
+          <div class="record-header">
+            <div><span class="mono">CUST-009184</span><h2>Amina Bello</h2><p>Retail banking customer - Lagos Marina branch</p></div>
+            <div class="toolbar"><a class="button" href="cases.html#new-case">New case</a><a class="button primary" href="onboarding.html#new-journey">Start KYC update</a></div>
+          </div>
+          <div class="mini-grid">
+            <div><span class="label">Customer status</span><strong>Active</strong></div>
+            <div><span class="label">Consent state</span><strong>WhatsApp and SMS allowed</strong></div>
+            <div><span class="label">PEP flag</span><strong>No active flag</strong></div>
+            <div><span class="label">Relationship value</span><strong>NGN 18.4m</strong></div>
+          </div>
+          <div class="grid inner">
+            <section>
+              <h3>Relationship Summary</h3>
+              <table><tbody><tr><th>Accounts</th><td>3 linked accounts, 1 card product, 1 active loan inquiry</td></tr><tr><th>Open cases</th><td><a href="cases.html#case-detail">CASE-1048 card dispute</a></td></tr><tr><th>Open opportunity</th><td>Personal savings retention offer</td></tr><tr><th>Last interaction</th><td>WhatsApp update, yesterday</td></tr></tbody></table>
+            </section>
+            <section>
+              <h3>Identity and Consent</h3>
+              <table><tbody><tr><th>BVN</th><td class="mono">******42 <a href="#reveal-control">Request reveal</a></td></tr><tr><th>NIN</th><td class="mono">******77 <a href="#reveal-control">Request reveal</a></td></tr><tr><th>DOB</th><td class="mono">**/**/1988 <a href="#reveal-control">Request reveal</a></td></tr><tr><th>Lawful basis</th><td><span class="badge success">Resolved</span></td></tr></tbody></table>
+            </section>
+          </div>
+        </div>
+        <aside class="panel sticky-card">
+          <h2>Action Rail</h2>
+          <div class="banner info"><strong>AI recommendation</strong><span>Offer service recovery call after CASE-1048 evidence is complete.</span></div>
+          <div class="status-list">
+            <div><span>Reveal path</span><span class="badge warning">Checker route</span></div>
+            <div><span>Duplicate scan</span><span class="badge success">Clear</span></div>
+            <div><span>Connector freshness</span><span class="badge warning">BVN stale</span></div>
+          </div>
+          <a class="button primary" href="ai.html#activity-log">View AI trace</a>
+        </aside>
+      </section>
+      <section id="activity" class="panel page-section">
+        <div class="section-title"><h2>Customer Activity History</h2><span class="badge info">SCR-016</span></div>
+        <table>
+          <thead><tr><th>Time</th><th>Event</th><th>Channel</th><th>Trace</th></tr></thead>
+          <tbody>
+            <tr><td>2h ago</td><td>Complaint opened and SLA timer started</td><td>Contact center</td><td class="mono">AUD-78411</td></tr>
+            <tr><td>Yesterday</td><td>Consent changed - WhatsApp enabled</td><td>Branch</td><td class="mono">AUD-78203</td></tr>
+            <tr><td>3d ago</td><td>Retention offer generated, human override recorded</td><td>AI advisory</td><td class="mono">AI-9071</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="reveal-control" class="panel page-section decision-grid">
+        <div>
+          <h2>Sensitive Field Reveal Control</h2>
+          <p>ISF-002 requires intent, lawful basis, permission, and immutable AccessDecisionTrace before any sensitive value is returned.</p>
+          <div class="field"><label>Reveal purpose</label><select class="select"><option>Complaint verification</option><option>Regulatory review</option><option>Customer correction request</option></select></div>
+          <div class="field"><label>Rationale</label><textarea class="textarea">Verify identity for active service recovery case.</textarea></div>
+        </div>
+        <aside>
+          <div class="banner critical"><strong>Not neutral:</strong><span>Reveal is a governed action. Value is not cached after modal close.</span></div>
+          <a class="button danger" href="approvals.html#approval-detail">Route reveal request</a>
+        </aside>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

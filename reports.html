@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports and Governed Exports - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="index.html">Workbench</a><a href="customers.html">Customers</a><a href="cases.html">Cases</a><a href="onboarding.html">Onboarding</a><a href="approvals.html">Approvals</a><a class="active" href="reports.html">Reports</a><a href="integration.html">Integrations</a><a href="ai.html">AI Command</a><a href="tenant-runtime.html">Tenant Runtime</a><a href="portal.html">Portal</a><a href="style-guide.html">Style Guide</a></nav>
+    <div class="side-meta"><strong>GoTech tenant</strong><br>Trust-grade baseline 3.26<br>Controlled build mode</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div>
+        <div class="crumb">Xplorer / Reports</div>
+        <div class="top-actions"><span class="status-dot"></span> Masking, export thresholds, and run history active</div>
+      </div>
+      <div class="top-actions"><span>Supervisor</span><span class="badge info">R1</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Reports and Governed Exports</h1><p class="lead">Release 1 reporting needs KPI dashboards, report parameter forms, export records, masking declarations, approval routing, and regulatory submission trace.</p></div>
+        <div class="toolbar"><a class="button primary" href="#report-builder">Build report</a><a class="button " href="#export-run">Export queue</a></div>
+      </div>
+      
+      <nav class="page-tabs" aria-label="Page sections"><a href="#analytics">Analytics</a><a href="#report-builder">Report builder</a><a href="#export-run">Export runs</a><a href="#regulatory">Regulatory submissions</a></nav>
+      <section class="kpis"><div class="kpi"><div class="label">Case resolution</div><div class="value">3.4d</div><span class="badge warning">target < 3d</span></div><div class="kpi"><div class="label">Onboarding completion</div><div class="value">81%</div><span class="badge warning">R1 target 85%</span></div><div class="kpi"><div class="label">Consent coverage</div><div class="value">99.2%</div><span class="badge success">near target</span></div><div class="kpi"><div class="label">Export approvals</div><div class="value">5</div><span class="badge info">checker queue</span></div></section>
+      <section id="analytics" class="panel page-section">
+        <div class="section-title"><h2>Operational Analytics Dashboard</h2><span class="badge info">ARCH-DASH</span></div>
+        <table><thead><tr><th>KPI</th><th>Branch</th><th>Current</th><th>Trend</th><th>Action</th></tr></thead><tbody><tr><td>Complaint SLA risk</td><td>Lagos Marina</td><td><span class="badge warning">14 due soon</span></td><td>Up 8%</td><td><a href="cases.html#case-queue">Open cases</a></td></tr><tr><td>Onboarding completion</td><td>Kano Central</td><td><span class="badge warning">76%</span></td><td>Down 4%</td><td><a href="onboarding.html#activity-queue">Open queue</a></td></tr><tr><td>Connector visibility</td><td>All</td><td><span class="badge success">Under 15m</span></td><td>Stable</td><td><a href="integration.html">Open health</a></td></tr></tbody></table>
+      </section>
+      <section id="report-builder" class="panel page-section">
+        <div class="section-title"><h2>Report Builder</h2><span class="badge info">Parameter form</span></div>
+        <div class="form-grid">
+          <div class="field"><label>Report type</label><select class="select"><option>Complaint resolution KPI</option><option>Onboarding funnel</option><option>Consent enforcement</option><option>Connector recovery log</option></select></div>
+          <div class="field"><label>Date range</label><input class="input" value="1 Apr 2026 - 28 Apr 2026"></div>
+          <div class="field"><label>Masking declaration</label><select class="select"><option>Masked by default</option><option>Aggregated only</option><option>Requires approval</option></select></div>
+          <div class="field"><label>Export threshold</label><input class="input" value="Checker approval above 5,000 rows"></div>
+        </div>
+        <div class="toolbar"><a class="button" href="#analytics">Preview</a><a class="button primary" href="#export-run">Run report</a></div>
+      </section>
+      <section id="export-run" class="panel page-section">
+        <div class="section-title"><h2>Governed Export Run History</h2><span class="badge warning">Approval-aware</span></div>
+        <table><thead><tr><th>Run</th><th>Report</th><th>Rows</th><th>Masking</th><th>Approval</th><th>Output</th></tr></thead><tbody><tr><td class="mono">RPT-2190</td><td>Complaint resolution KPI</td><td>8,240</td><td><span class="badge success">Masked</span></td><td><span class="badge warning">Checker required</span></td><td>Held</td></tr><tr><td class="mono">RPT-2184</td><td>Connector recovery log</td><td>412</td><td><span class="badge success">No sensitive values</span></td><td><span class="badge success">Not required</span></td><td>Released</td></tr></tbody></table>
+        <div class="banner critical"><strong>Export blocked:</strong><span>High-volume export cannot release output until approval trail exists.</span></div>
+      </section>
+      <section id="regulatory" class="panel page-section">
+        <div class="section-title"><h2>Regulatory Submission Trace</h2><span class="badge info">Evidence first</span></div>
+        <div class="flow-steps"><div class="step active"><strong>Package assembled</strong><span>Evidence bundle complete</span></div><div class="step active"><strong>Checker review</strong><span>Approval pending</span></div><div class="step"><strong>Transmission</strong><span>SFTP health verified</span></div><div class="step"><strong>Downstream status</strong><span>Await receipt</span></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the PRD, functional requirements, UX spec, and User Stories screen extracts. No backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>
