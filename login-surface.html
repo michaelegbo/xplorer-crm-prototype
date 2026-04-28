@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Surface - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="app" data-feature="tenant" data-screen-id="SCR-091">
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Tenant/Admin / Login Surface</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
+    </header>
+    <main class="page">
+      <div data-access-guard></div>
+      <div class="page-head">
+        <div><span class="eyebrow">Tenant/Admin</span><h1>Login Surface</h1><p>Capture required information, save drafts, and submit when validation passes.</p></div>
+        <div class="toolbar"><a class="button primary" href="authentication-challenge.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
+      </div>
+      
+  <section class="panel" data-guarded-content>
+    <div class="section-title"><h2>Login Surface</h2><span class="chip success">Draft saved</span></div>
+    <div class="form-grid">
+      <label><span>Subject</span><input value="GoTech pilot tenant"></label>
+      <label><span>Owner</span><select><option>Current profile queue</option><option>Reviewer queue</option><option>Service recovery</option></select></label>
+      <label><span>Priority</span><select><option>Normal</option><option>High</option><option>Blocked</option></select></label>
+      <label><span>Due date</span><input value="29 Apr 2026"></label>
+      <label class="wide"><span>Description</span><textarea>Demo record prepared with customer context, evidence, and routed next action.</textarea></label>
+    </div>
+    <div class="validation-list">
+      <div><span class="chip success">Valid</span> Required fields complete</div>
+      <div><span class="chip warning">Check</span> Evidence item pending</div>
+      <div><span class="chip info">Scoped</span> Tenant and role scope active</div>
+    </div>
+    <div class="toolbar"><a class="button " href="authentication-challenge.html">Save draft</a><a class="button primary" href="authentication-challenge.html">Submit</a><a class="button " href="workspace.html">Cancel</a></div>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="authentication-challenge.html">Authentication Challenge</a><a class="button " href="session-timeout.html">Session Timeout Recovery</a><a class="button " href="workspace.html">My Workspace</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

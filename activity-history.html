@@ -5,48 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Customer Activity History - Xplorer CRM</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body data-page="app" data-feature="customers" data-screen-id="SCR-016">
 <div class="app-shell">
   <aside class="side">
-    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
-    <div class="side-title">Login As</div>
-    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a class="active" href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
-    <div class="side-actions">
-      <a class="button " href="role-service.html">My workspace</a>
-      <a class="button " href="index.html">Switch role</a>
-    </div>
-    <div class="side-meta"><strong>Signed in</strong><br>Service Operator<br>Tenant: GoTech pilot</div>
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Service Agent / Customer Activity History</div><div class="status"><span></span>Workspace active</div></div>
-      <div class="top-actions"><span class="chip info">Service Agent</span><span class="chip success">R1 controlled build</span></div>
+      <div><div class="crumb">Xplorer / Customers / Customer Activity History</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
     </header>
     <main class="page">
+      <div data-access-guard></div>
       <div class="page-head">
-        <div><h1>Customer Activity History</h1><p>Timeline of interactions, channels, cases, campaign response, onboarding events, notifications, and evidence links.</p></div>
-        <div class="toolbar"><a class="button " href="role-service.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
+        <div><span class="eyebrow">Customers</span><h1>Customer Activity History</h1><p>Work customers items from a scoped operational queue.</p></div>
+        <div class="toolbar"><a class="button primary" href="interaction-detail.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
       </div>
-      
-    <section class="panel">
-    <div class="section-title"><h2>Customer Activity History</h2><span class="chip info">Live demo data</span></div>
-    <section class="stats"><div class="stat"><span>Open</span><strong>128</strong><em>in role scope</em></div><div class="stat"><span>Due today</span><strong>24</strong><em>requires attention</em></div><div class="stat"><span>Blocked</span><strong>8</strong><em>policy/evidence/dependency</em></div><div class="stat"><span>Completed</span><strong>91%</strong><em>this week</em></div></section>
-    <table><thead><tr><th>Reference</th><th>Customer</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">CAH-2180</span></td><td>Amina Bello</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="contact-center.html">Open</a></td></tr><tr><td><span class="mono">CAH-2181</span></td><td>Kano Traders Ltd</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="case-detail.html">Open</a></td></tr><tr><td><span class="mono">CAH-2182</span></td><td>Northline Services</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="customer-360.html">Open</a></td></tr><tr><td><span class="mono">CAH-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="contact-center.html">Open</a></td></tr></tbody></table>
+      <section class="notice warning"><strong>Reconciliation required</strong><span>Needs full story reconciliation against source</span></section>
+  <section class="panel" data-guarded-content>
+    <div class="section-title"><h2>Customer Activity History</h2><span class="chip info">List</span></div>
+    <div class="filters">
+      <label><span>Search</span><input value="Kano"></label>
+      <label><span>Status</span><select><option>All active</option><option>Blocked</option><option>Waiting</option><option>Ready</option></select></label>
+      <label><span>Owner</span><select><option>My queue</option><option>Team queue</option><option>Unassigned</option></select></label>
+    </div>
+    <table><thead><tr><th>Reference</th><th>Subject</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">XP-016-2180</span></td><td>Kano Traders Ltd</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="interaction-detail.html">Open</a></td></tr><tr><td><span class="mono">XP-016-2181</span></td><td>Amina Bello</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="case-detail.html">Open</a></td></tr><tr><td><span class="mono">XP-016-2182</span></td><td>GoTech Operations</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="customer-360.html">Open</a></td></tr><tr><td><span class="mono">XP-016-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="interaction-detail.html">Open</a></td></tr><tr><td><span class="mono">XP-016-2184</span></td><td>Northline Services</td><td><span class="chip info">In progress</span></td><td>This week</td><td><a href="case-detail.html">Open</a></td></tr></tbody></table>
   </section>
   <section class="panel">
-    <div class="section-title"><h2>Operational Activity</h2><span class="chip success">Recent</span></div>
-    <div class="timeline">
-    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
-    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
-    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
-  </div>
+    <div class="section-title"><h2>Selected Record Preview</h2><span class="chip info">REC-4821</span></div>
+    <div class="preview-grid">
+      <div><span>Subject</span><strong>Kano Traders Ltd</strong></div>
+      <div><span>Owner</span><strong>Current user</strong></div>
+      <div><span>Evidence</span><strong>4 of 5 items</strong></div>
+      <div><span>Last activity</span><strong>12 minutes ago</strong></div>
+    </div>
+    <div class="toolbar"><a class="button primary" href="interaction-detail.html">Interaction Record Detail</a><a class="button " href="case-detail.html">Case Detail</a><a class="button " href="customer-360.html">Customer 360 View</a></div>
   </section>
-    <section class="panel">
-      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
-      <div class="toolbar"><a class="button primary" href="contact-center.html">Omnichannel Contact Center</a><a class="button " href="case-detail.html">Case Detail and Update</a><a class="button " href="customer-360.html">Customer 360</a><a class="button " href="role-service.html">Back to workspace</a></div>
-    </section>
-      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="interaction-detail.html">Interaction Record Detail</a><a class="button " href="case-detail.html">Case Detail</a><a class="button " href="customer-360.html">Customer 360 View</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
     </main>
   </section>
 </div>

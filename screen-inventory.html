@@ -5,40 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Screen Inventory - Xplorer CRM</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body data-page="app" data-feature="workbench" data-screen-id="">
 <div class="app-shell">
   <aside class="side">
-    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
-    <div class="side-title">Login As</div>
-    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
-    <div class="side-actions">
-      
-      <a class="button " href="index.html">Switch role</a>
-    </div>
-    <div class="side-meta"><strong>Signed in</strong><br>Xplorer user<br>Tenant: GoTech pilot</div>
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Screen Inventory</div><div class="status"><span></span>Module-to-screen coverage</div></div>
-      <div class="top-actions"><span class="chip success">R1 controlled build</span></div>
+      <div><div class="crumb">Xplorer / Workbench / Screen Inventory</div><div class="status"><span></span>Reference only</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
     </header>
     <main class="page">
+      <div data-access-guard></div>
       <div class="page-head">
-        <div><h1>Screen Inventory</h1><p>Condensed module coverage from the User Stories and screen content packs.</p></div>
-        <div class="toolbar"><a class="button primary" href="source-map.html">Source map</a><a class="button " href="design-system.html">Design rules</a></div>
+        <div><span class="eyebrow">Workbench</span><h1>Screen Inventory</h1><p>Screen estate summary used by the generator.</p></div>
+        <div class="toolbar"></div>
       </div>
-      
-    <section class="panel">
-      <div class="section-title"><h2>Coverage Summary</h2><span class="chip warning">Reconciled</span></div>
-      <table><thead><tr><th>Coverage item</th><th>Count</th></tr></thead><tbody><tr><td>Source-declared promoted screens</td><td>114</td></tr><tr><td>Unique SCR IDs extracted from text</td><td>113</td></tr><tr><td>Screen headings with route/layout</td><td>105</td></tr><tr><td>Full story blocks parsed into PM pack</td><td>86</td></tr><tr><td>Role families represented in HTML login</td><td>10</td></tr><tr><td>Separate prototype pages</td><td>80</td></tr></tbody></table>
-    </section>
-    <section class="panel">
-      <div class="section-title"><h2>Prototype Coverage by Family</h2><span class="chip success">Role-first</span></div>
-      <table><thead><tr><th>Family</th><th>Representative pages</th></tr></thead><tbody><tr><td>Customer and relationship</td><td>Customer Search, Customer 360, Activity History</td></tr><tr><td>Commercial growth and contact center</td><td>Opportunity Pipeline, Campaigns, Segment Browser, Contact Center</td></tr><tr><td>Service and recovery</td><td>Case Queue, Case Detail, Recovery Queue, Escalation</td></tr><tr><td>Onboarding and regulatory controls</td><td>Onboarding Queue, KYC Wizard, Approval Queue, Policy Holds</td></tr><tr><td>Access, consent, and channels</td><td>Identity, Consent/Channel, Role/User/Session Admin</td></tr><tr><td>Analytics, reporting, and knowledge</td><td>Reports, Export Run, Knowledge Browse, AI Search</td></tr><tr><td>Field, fulfillment, and TRD</td><td>Appointments, Work Orders, Inspections, Billing, Visit Execution</td></tr><tr><td>AI, integration, tenant, sector</td><td>AI Command, Integration Health, Tenant Activation, Sector Pack Governance</td></tr><tr><td>Portal</td><td>Status, Request, Upload, Messages, Consent</td></tr></tbody></table>
-    </section>
-  
-      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
+      <section class="panel">
+    <div class="section-title"><h2>Screen Inventory</h2><span class="chip info">Reference</span></div>
+    <p>The application screens are generated from the parsed screen inventory.</p>
+    <table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Source-declared promoted screens</td><td>114</td></tr><tr><td>Parsed screen rows</td><td>105</td></tr><tr><td>Generated reconciliation placeholders</td><td>9</td></tr></tbody></table>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
     </main>
   </section>
 </div>

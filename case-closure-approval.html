@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Closure Approval - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="app" data-feature="service" data-screen-id="SCR-026">
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Service / Case Closure Approval</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
+    </header>
+    <main class="page">
+      <div data-access-guard></div>
+      <div class="page-head">
+        <div><span class="eyebrow">Service</span><h1>Case Closure Approval</h1><p>Review evidence first, capture rationale, and route a maker-checker decision.</p></div>
+        <div class="toolbar"><a class="button primary" href="approval-queue.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
+      </div>
+      
+  <section class="approval-grid" data-guarded-content>
+    <div class="panel">
+      <div class="section-title"><h2>Evidence Review</h2><span class="chip warning">Maker-checker</span></div>
+      <table><thead><tr><th>Evidence item</th><th>State</th></tr></thead><tbody><tr><td>Customer context</td><td><span class="chip success">Verified</span></td></tr><tr><td>Documents</td><td><span class="chip warning">4 of 5</span></td></tr><tr><td>Connector freshness</td><td><span class="chip critical">Stale</span></td></tr><tr><td>Proposer</td><td>Branch Officer - not eligible to self-approve</td></tr></tbody></table>
+      <h3>Decision Rationale</h3>
+      <textarea>Decision requires evidence review and separation of duties.</textarea>
+    </div>
+    <aside class="panel">
+      <div class="section-title"><h2>Decision</h2><span class="chip critical">Immutable on submit</span></div>
+      <div class="action-stack">
+        <a class="button primary" href="approval-queue.html">Approve</a>
+        <a class="button " href="approval-case-closure.html">Reject</a>
+        <a class="button " href="case-detail.html">Place hold</a>
+      </div>
+      <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record opened and scoped to the signed-in profile.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, dependency, or consent posture refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the owning workspace.</span></div>
+  </div>
+    </aside>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="approval-queue.html">Maker-Checker Approval Queue</a><a class="button " href="approval-case-closure.html">Case Closure Approval Decision</a><a class="button " href="case-detail.html">Case Detail</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

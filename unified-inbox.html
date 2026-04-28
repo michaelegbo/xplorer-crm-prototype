@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unified Inbox Surface - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="app" data-feature="contact" data-screen-id="SCR-073">
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Contact Center / Unified Inbox Surface</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
+    </header>
+    <main class="page">
+      <div data-access-guard></div>
+      <div class="page-head">
+        <div><span class="eyebrow">Contact Center</span><h1>Unified Inbox Surface</h1><p>Work contact center items from a scoped operational queue.</p></div>
+        <div class="toolbar"><a class="button primary" href="contact-center-inbox.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
+      </div>
+      
+  <section class="panel" data-guarded-content>
+    <div class="section-title"><h2>Unified Inbox Surface</h2><span class="chip info">List</span></div>
+    <div class="filters">
+      <label><span>Search</span><input value="WhatsApp"></label>
+      <label><span>Status</span><select><option>All active</option><option>Blocked</option><option>Waiting</option><option>Ready</option></select></label>
+      <label><span>Owner</span><select><option>My queue</option><option>Team queue</option><option>Unassigned</option></select></label>
+    </div>
+    <table><thead><tr><th>Reference</th><th>Subject</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">XP-073-2180</span></td><td>WhatsApp inbound conversation</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="contact-center-inbox.html">Open</a></td></tr><tr><td><span class="mono">XP-073-2181</span></td><td>Amina Bello</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="case-new.html">Open</a></td></tr><tr><td><span class="mono">XP-073-2182</span></td><td>GoTech Operations</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="interaction-detail.html">Open</a></td></tr><tr><td><span class="mono">XP-073-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="contact-center-inbox.html">Open</a></td></tr><tr><td><span class="mono">XP-073-2184</span></td><td>Northline Services</td><td><span class="chip info">In progress</span></td><td>This week</td><td><a href="case-new.html">Open</a></td></tr></tbody></table>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Selected Record Preview</h2><span class="chip info">REC-4821</span></div>
+    <div class="preview-grid">
+      <div><span>Subject</span><strong>WhatsApp inbound conversation</strong></div>
+      <div><span>Owner</span><strong>Current user</strong></div>
+      <div><span>Evidence</span><strong>4 of 5 items</strong></div>
+      <div><span>Last activity</span><strong>12 minutes ago</strong></div>
+    </div>
+    <div class="toolbar"><a class="button primary" href="contact-center-inbox.html">Interaction Console - Omnichannel</a><a class="button " href="case-new.html">Case Creation Form</a><a class="button " href="interaction-detail.html">Interaction Record Detail</a></div>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="contact-center-inbox.html">Interaction Console - Omnichannel</a><a class="button " href="case-new.html">Case Creation Form</a><a class="button " href="interaction-detail.html">Interaction Record Detail</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

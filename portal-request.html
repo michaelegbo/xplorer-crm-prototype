@@ -3,48 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Customer Request Submission - Xplorer CRM</title>
+  <title>Customer Request Submission Form - Xplorer CRM</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body data-page="app" data-feature="portal" data-screen-id="SCR-088">
 <div class="app-shell">
   <aside class="side">
-    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
-    <div class="side-title">Login As</div>
-    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a class="active" href="role-customer.html">Customer Portal</a></nav>
-    <div class="side-actions">
-      <a class="button " href="role-customer.html">My workspace</a>
-      <a class="button " href="index.html">Switch role</a>
-    </div>
-    <div class="side-meta"><strong>Signed in</strong><br>Customer Portal User<br>Tenant: GoTech pilot</div>
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Customer Portal / Customer Request Submission</div><div class="status"><span></span>Workspace active</div></div>
-      <div class="top-actions"><span class="chip info">Customer Portal</span><span class="chip success">R1 controlled build</span></div>
+      <div><div class="crumb">Xplorer / Portal / Customer Request Submission Form</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
     </header>
     <main class="page">
+      <div data-access-guard></div>
       <div class="page-head">
-        <div><h1>Customer Request Submission</h1><p>Request form for complaint, service request, document update, or appointment-related customer action.</p></div>
-        <div class="toolbar"><a class="button " href="role-customer.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
+        <div><span class="eyebrow">Portal</span><h1>Customer Request Submission Form</h1><p>Capture required information, save drafts, and submit when validation passes.</p></div>
+        <div class="toolbar"><a class="button primary" href="portal-status.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
       </div>
       
-    <section class="panel">
-    <div class="section-title"><h2>Customer Request Submission</h2><span class="chip success">Draft saved</span></div>
+  <section class="panel" data-guarded-content>
+    <div class="section-title"><h2>Customer Request Submission Form</h2><span class="chip success">Draft saved</span></div>
     <div class="form-grid">
-      <label><span>Customer or subject</span><input value="Kano Traders Ltd"></label>
-      <label><span>Owner</span><select><option>Current role queue</option><option>Compliance queue</option><option>Service recovery</option></select></label>
+      <label><span>Subject</span><input value="My service request"></label>
+      <label><span>Owner</span><select><option>Current profile queue</option><option>Reviewer queue</option><option>Service recovery</option></select></label>
       <label><span>Priority</span><select><option>Normal</option><option>High</option><option>Blocked</option></select></label>
-      <label><span>Due date</span><input value="28 Apr 2026"></label>
-      <label class="wide"><span>Notes</span><textarea>Demo record prepared with evidence, customer context, and routed next action.</textarea></label>
+      <label><span>Due date</span><input value="29 Apr 2026"></label>
+      <label class="wide"><span>Description</span><textarea>Demo record prepared with customer context, evidence, and routed next action.</textarea></label>
     </div>
-    <div class="toolbar"><a class="button " href="portal-status.html">Save draft</a><a class="button primary" href="portal-upload.html">Submit</a></div>
+    <div class="validation-list">
+      <div><span class="chip success">Valid</span> Required fields complete</div>
+      <div><span class="chip warning">Check</span> Evidence item pending</div>
+      <div><span class="chip info">Scoped</span> Tenant and role scope active</div>
+    </div>
+    <div class="toolbar"><a class="button " href="portal-status.html">Save draft</a><a class="button primary" href="portal-status.html">Submit</a><a class="button " href="workspace.html">Cancel</a></div>
   </section>
-    <section class="panel">
-      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
-      <div class="toolbar"><a class="button primary" href="portal-status.html">Customer Status Portal</a><a class="button " href="portal-upload.html">Portal Document Upload</a><a class="button " href="portal-messages.html">Secure Messaging Portal</a><a class="button " href="role-customer.html">Back to workspace</a></div>
-    </section>
-      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="portal-status.html">Customer Status Portal</a><a class="button " href="portal-upload.html">Document Upload Surface - Portal</a><a class="button " href="portal-messages.html">Secure Messaging Surface - Portal</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
     </main>
   </section>
 </div>

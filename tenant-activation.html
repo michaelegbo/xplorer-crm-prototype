@@ -3,48 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tenant Activation and Post-Activation Watch - Xplorer CRM</title>
+  <title>Tenant Activation Checklist Wizard - Xplorer CRM</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body data-page="app" data-feature="tenant" data-screen-id="SCR-093">
 <div class="app-shell">
   <aside class="side">
-    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
-    <div class="side-title">Login As</div>
-    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a class="active" href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
-    <div class="side-actions">
-      <a class="button " href="role-admin.html">My workspace</a>
-      <a class="button " href="index.html">Switch role</a>
-    </div>
-    <div class="side-meta"><strong>Signed in</strong><br>Tenant and Platform Administrator<br>Tenant: GoTech pilot</div>
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Tenant Admin / Tenant Activation and Post-Activation Watch</div><div class="status"><span></span>Workspace active</div></div>
-      <div class="top-actions"><span class="chip info">Tenant Admin</span><span class="chip success">R1 controlled build</span></div>
+      <div><div class="crumb">Xplorer / Tenant/Admin / Tenant Activation Checklist Wizard</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
     </header>
     <main class="page">
+      <div data-access-guard></div>
       <div class="page-head">
-        <div><h1>Tenant Activation and Post-Activation Watch</h1><p>Activation checklist, readiness gate, sponsor sign-off, connector readiness, activation decision, and watch window.</p></div>
-        <div class="toolbar"><a class="button " href="role-admin.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
+        <div><span class="eyebrow">Tenant/Admin</span><h1>Tenant Activation Checklist Wizard</h1><p>Complete the guided flow with partial save, missing items, and clear blocking reasons.</p></div>
+        <div class="toolbar"><a class="button primary" href="activation-readiness.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
       </div>
       
-    <section class="panel">
-    <div class="section-title"><h2>Tenant Activation and Post-Activation Watch</h2><span class="chip success">Draft saved</span></div>
-    <div class="form-grid">
-      <label><span>Customer or subject</span><input value="Kano Traders Ltd"></label>
-      <label><span>Owner</span><select><option>Current role queue</option><option>Compliance queue</option><option>Service recovery</option></select></label>
-      <label><span>Priority</span><select><option>Normal</option><option>High</option><option>Blocked</option></select></label>
-      <label><span>Due date</span><input value="28 Apr 2026"></label>
-      <label class="wide"><span>Notes</span><textarea>Demo record prepared with evidence, customer context, and routed next action.</textarea></label>
+  <section class="panel wizard" data-guarded-content>
+    <div class="section-title"><h2>Tenant Activation Checklist Wizard</h2><span class="chip info">Step 3 of 5</span></div>
+    <div class="stepper"><span class="done">Customer</span><span class="done">Documents</span><span class="active">KYC</span><span>Consent</span><span>Submit</span></div>
+    <div class="two-col">
+      <div>
+        <h3>Current Step</h3>
+        <div class="form-grid single">
+          <label><span>Identity result</span><select><option>Matched with warning</option><option>Matched</option><option>Failed</option></select></label>
+          <label><span>Review note</span><textarea>Connector returned a stale timestamp. Continue only after evidence check or recovery route.</textarea></label>
+        </div>
+      </div>
+      <div class="missing-panel">
+        <h3>Blocking Items</h3>
+        <div><span class="chip warning">Missing</span> Utility bill upload</div>
+        <div><span class="chip critical">Stale</span> Identity connector freshness</div>
+        <div><span class="chip success">Ready</span> Consent captured</div>
+      </div>
     </div>
-    <div class="toolbar"><a class="button " href="tenant-conformance.html">Save draft</a><a class="button primary" href="integration-health.html">Submit</a></div>
+    <div class="toolbar"><a class="button " href="activation-readiness.html">Save progress</a><a class="button primary" href="post-activation-watch.html">Continue</a></div>
   </section>
-    <section class="panel">
-      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
-      <div class="toolbar"><a class="button primary" href="tenant-conformance.html">Tenant Conformance Workspace</a><a class="button " href="integration-health.html">Integration Health Dashboard</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-admin.html">Back to workspace</a></div>
-    </section>
-      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="activation-readiness.html">Activation Readiness - Conformance Gate Dashboard</a><a class="button " href="post-activation-watch.html">Post-Activation Watch Console</a><a class="button " href="integration-health.html">Integration Health Dashboard</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
     </main>
   </section>
 </div>

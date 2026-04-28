@@ -5,88 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login - Xplorer CRM</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
-<body class="login-shell">
+<body class="login-shell" data-page="login">
 <main class="login-wrap">
     <section class="login-hero">
       <img src="assets/xplorer-logo-black.png" alt="Xplorer">
       <h1>Sign in to Xplorer</h1>
-      <p>GoTech pilot tenant | Tuesday, 28 April 2026 | Choose a demo profile to open that user's workspace.</p>
+      <p>Choose a demo profile. After login, the app shows feature navigation for that user, not a role directory.</p>
       <div class="login-form">
         <label><span>Tenant</span><input value="GoTech pilot"></label>
         <label><span>Environment</span><select><option>Controlled demo</option></select></label>
       </div>
     </section>
-    <section class="role-grid"><article class="role-card">
-    <div><span class="eyebrow">Relationship Manager / Sales Officer / Branch Officer</span><h2>Commercial &amp; Onboarding</h2><p>Open the Commercial &amp; Onboarding workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <section class="profile-grid"><article class="profile-card">
+    <div><span class="eyebrow">Relationship Manager / Sales Officer / Branch Officer</span><h2>Commercial &amp; Onboarding</h2><p>Works customer context, sales, campaigns, onboarding, documents, and governed handoff.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Customer Search</strong></div>
+      <div><span>Modules</span><strong>9</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-commercial.html">Continue as Commercial &amp; Onboarding</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Service Agent / Contact Center Agent</span><h2>Service Agent</h2><p>Open the Service Agent workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=commercial" data-login-role="commercial">Login as Commercial &amp; Onboarding</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Service Agent / Contact Center Agent</span><h2>Service Agent</h2><p>Handles inbox conversations, cases, recovery, SLA risk, evidence, and knowledge-guided resolution.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Omnichannel Contact Center Console - Routing View</strong></div>
+      <div><span>Modules</span><strong>8</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-service.html">Continue as Service Agent</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Compliance Officer / Restricted Reviewer</span><h2>Compliance Reviewer</h2><p>Open the Compliance Reviewer workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=service" data-login-role="service">Login as Service Agent</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Compliance Officer / Restricted Reviewer</span><h2>Compliance Reviewer</h2><p>Reviews approvals, holds, identity exceptions, exports, sensitive reveals, and evidence sufficiency.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Maker-Checker Approval Queue</strong></div>
+      <div><span>Modules</span><strong>8</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-compliance.html">Continue as Compliance Reviewer</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Supervisor / Branch Manager / Service Lead</span><h2>Supervisor</h2><p>Open the Supervisor workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=compliance" data-login-role="compliance">Login as Compliance Reviewer</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Supervisor / Branch Manager / Service Lead</span><h2>Supervisor</h2><p>Monitors queues, performance, SLA risk, escalations, remediation, team assignment, and exceptions.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Operator Role Workbench</strong></div>
+      <div><span>Modules</span><strong>14</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-supervisor.html">Continue as Supervisor</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Tenant Admin / Platform Support</span><h2>Tenant Admin</h2><p>Open the Tenant Admin workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=supervisor" data-login-role="supervisor">Login as Supervisor</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Tenant Admin / Platform Support</span><h2>Tenant Admin</h2><p>Manages tenant conformance, users, roles, connector health, replay, activation, and protected settings.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>7</strong></div>
+      <div><span>First screen</span><strong>Tenant Conformance Workspace</strong></div>
+      <div><span>Modules</span><strong>7</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-admin.html">Continue as Tenant Admin</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">AI Governance Officer</span><h2>AI Governance</h2><p>Open the AI Governance workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=admin" data-login-role="admin">Login as Tenant Admin</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">AI Governance Officer</span><h2>AI Governance</h2><p>Supervises advisory AI, policy breaches, lineage, instructions, suppressions, and overrides.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>AI Command Center Console</strong></div>
+      <div><span>Modules</span><strong>6</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-ai.html">Continue as AI Governance</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Marketing Operator</span><h2>Marketing</h2><p>Open the Marketing workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=ai" data-login-role="ai">Login as AI Governance</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Marketing Operator</span><h2>Marketing</h2><p>Runs consent-aware campaigns, segments, journeys, attribution, and sales handoff.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Campaign Management Console</strong></div>
+      <div><span>Modules</span><strong>8</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-marketing.html">Continue as Marketing</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Inspector / TRD Field Representative / Collections Officer</span><h2>Field Ops</h2><p>Open the Field Ops workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=marketing" data-login-role="marketing">Login as Marketing</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Inspector / TRD Field Representative / Collections Officer</span><h2>Field Ops</h2><p>Works appointments, work orders, inspections, billing coordination, TRD visits, and field evidence.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Appointment Schedule View</strong></div>
+      <div><span>Modules</span><strong>7</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-field.html">Continue as Field Ops</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Sector Pack Author / QA Validation Lead / Release Authority</span><h2>Sector Pack</h2><p>Open the Sector Pack workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=field" data-login-role="field">Login as Field Ops</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Sector Pack Author / QA Validation Lead / Release Authority</span><h2>Sector Pack</h2><p>Manages sector packs, manifests, authoring, staging validation, promotion, and sector overlays.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>42</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Sector Pack Registry</strong></div>
+      <div><span>Modules</span><strong>7</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-sector.html">Continue as Sector Pack</a></div>
-  </article><article class="role-card">
-    <div><span class="eyebrow">Self-service customer</span><h2>Customer Portal</h2><p>Open the Customer Portal workspace with demo records, assigned work, and role-scoped actions.</p></div>
+    <a class="button primary" href="workspace.html?role=sector" data-login-role="sector">Login as Sector Pack</a>
+  </article><article class="profile-card">
+    <div><span class="eyebrow">Self-service customer</span><h2>Customer Portal</h2><p>Views own status, submits requests, uploads documents, sends messages, and manages consent.</p></div>
     <div class="mini-grid compact">
-      <div><span>Open items</span><strong>3</strong></div>
-      <div><span>Due today</span><strong>12</strong></div>
+      <div><span>First screen</span><strong>Customer Status Portal</strong></div>
+      <div><span>Modules</span><strong>1</strong></div>
     </div>
-    <div class="card-actions"><a class="button primary" href="role-customer.html">Continue as Customer Portal</a></div>
+    <a class="button primary" href="workspace.html?role=customer" data-login-role="customer">Login as Customer Portal</a>
   </article></section>
   </main>
 </body>

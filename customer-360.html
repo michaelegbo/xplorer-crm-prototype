@@ -3,58 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Customer 360 - Xplorer CRM</title>
+  <title>Customer 360 View - Xplorer CRM</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body data-page="app" data-feature="customers" data-screen-id="SCR-013">
 <div class="app-shell">
   <aside class="side">
-    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
-    <div class="side-title">Login As</div>
-    <nav class="role-nav" aria-label="Role navigation"><a class="active" href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
-    <div class="side-actions">
-      <a class="button " href="role-commercial.html">My workspace</a>
-      <a class="button " href="index.html">Switch role</a>
-    </div>
-    <div class="side-meta"><strong>Signed in</strong><br>Commercial and Onboarding Operator<br>Tenant: GoTech pilot</div>
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
   </aside>
   <section class="main">
     <header class="topbar">
-      <div><div class="crumb">Xplorer / Commercial &amp; Onboarding / Customer 360</div><div class="status"><span></span>Workspace active</div></div>
-      <div class="top-actions"><span class="chip info">Commercial &amp; Onboarding</span><span class="chip success">R1 controlled build</span></div>
+      <div><div class="crumb">Xplorer / Customers / Customer 360 View</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
     </header>
     <main class="page">
+      <div data-access-guard></div>
       <div class="page-head">
-        <div><h1>Customer 360</h1><p>Customer profile, relationship household, activity history, consent posture, open work, offers, and reveal path.</p></div>
-        <div class="toolbar"><a class="button " href="role-commercial.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
+        <div><span class="eyebrow">Customers</span><h1>Customer 360 View</h1><p>Review the selected record, evidence posture, timeline, and next action.</p></div>
+        <div class="toolbar"><a class="button primary" href="opportunity-detail.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
       </div>
       
-    <section class="detail-grid">
+  <section class="detail-grid" data-guarded-content>
     <div class="panel">
-      <div class="record-title"><div><span class="mono">REC-4821</span><h2>Customer 360</h2><p>A live demo record with customer context, state, owner, evidence posture, and next action.</p></div><span class="chip success">Active</span></div>
+      <div class="record-title"><div><span class="mono">CUS-4821</span><h2>Kano Traders Ltd</h2><p>Customer 360 View with customer context, state, owner, evidence posture, and next action.</p></div><span class="chip success">Active</span></div>
+      <div class="tabs"><span class="active">Overview</span><span>Evidence</span><span>Timeline</span><span>Messages</span></div>
       <div class="mini-grid">
         <div><span>Customer</span><strong>Kano Traders Ltd</strong></div>
-        <div><span>Owner</span><strong>Current role queue</strong></div>
+        <div><span>Owner</span><strong>Current profile</strong></div>
         <div><span>Evidence</span><strong>4 of 5 items</strong></div>
         <div><span>Risk</span><strong>Medium</strong></div>
       </div>
-      <table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Current state</td><td><span class="chip warning">Review required</span></td></tr><tr><td>Last update</td><td>Today, 12:05</td></tr><tr><td>Linked workflow</td><td><a href="opportunity-detail.html">Opportunity Detail</a></td></tr><tr><td>Customer contact</td><td>SMS allowed, WhatsApp not granted</td></tr></tbody></table>
+      <table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Current state</td><td><span class="chip warning">Review required</span></td></tr><tr><td>Last update</td><td>Today, 12:05</td></tr><tr><td>Current workspace</td><td>Customers</td></tr><tr><td>Next workflow</td><td><a href="opportunity-detail.html">Opportunity Detail</a></td></tr></tbody></table>
     </div>
     <aside class="panel">
       <div class="section-title"><h2>Actions</h2><span class="chip info">Role scoped</span></div>
-      <div class="action-stack"><a class="button primary" href="opportunity-detail.html">Opportunity Detail</a><a class="button " href="case-new.html">Case Creation Form</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a></div>
+      <div class="action-stack"><a class="button primary" href="opportunity-detail.html">Opportunity Detail</a><a class="button " href="case-new.html">Case Creation Form</a><a class="button " href="consent-capture.html">Consent Capture Form</a></div>
       <h3>Activity</h3><div class="timeline">
-    <div class="event"><strong>09:18</strong><span>Record updated by current role.</span></div>
-    <div class="event"><strong>10:42</strong><span>Evidence, consent, or dependency state refreshed.</span></div>
-    <div class="event"><strong>12:05</strong><span>Next action routed to the appropriate workspace.</span></div>
+    <div class="event"><strong>09:18</strong><span>Record opened and scoped to the signed-in profile.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, dependency, or consent posture refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the owning workspace.</span></div>
   </div>
     </aside>
   </section>
-    <section class="panel">
-      <div class="section-title"><h2>Next Actions</h2><span class="chip success">Available</span></div>
-      <div class="toolbar"><a class="button primary" href="opportunity-detail.html">Opportunity Detail</a><a class="button " href="case-new.html">Case Creation Form</a><a class="button " href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-commercial.html">Back to workspace</a></div>
-    </section>
-      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | No production changes are executed.</p>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="opportunity-detail.html">Opportunity Detail</a><a class="button " href="case-new.html">Case Creation Form</a><a class="button " href="consent-capture.html">Consent Capture Form</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
     </main>
   </section>
 </div>

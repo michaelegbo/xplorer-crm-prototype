@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Failure Investigation Dashboard - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="app" data-feature="analytics" data-screen-id="SCR-060">
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="workspace.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Application</div>
+    <nav class="feature-nav" data-feature-nav aria-label="Application navigation"></nav>
+    <div class="side-meta"><strong data-role-label>Signed-in user</strong><br><span data-role-title>Role loading</span><br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Analytics / Service Failure Investigation Dashboard</div><div class="status"><span></span>Workspace active</div></div>
+      <div class="top-actions"><span class="chip info" data-role-label>Profile</span><span class="chip success">Controlled demo</span><a class="button small" href="index.html" data-switch-role>Switch profile</a></div>
+    </header>
+    <main class="page">
+      <div data-access-guard></div>
+      <div class="page-head">
+        <div><span class="eyebrow">Analytics</span><h1>Service Failure Investigation Dashboard</h1><p>Monitor workload, performance, risks, and actionable exceptions.</p></div>
+        <div class="toolbar"><a class="button primary" href="sla-monitoring.html">Continue</a><a class="button " href="workspace.html">My workspace</a></div>
+      </div>
+      
+  <section class="stats"><div class="stat"><span>Open work</span><strong>128</strong><em>in current scope</em></div><div class="stat"><span>Due today</span><strong>24</strong><em>requires attention</em></div><div class="stat"><span>Blocked</span><strong>8</strong><em>evidence or dependency</em></div><div class="stat"><span>SLA health</span><strong>91%</strong><em>this week</em></div></section>
+  <section class="dashboard-grid" data-guarded-content>
+    <div class="panel wide-panel">
+      <div class="section-title"><h2>Active Queue</h2><span class="chip info">Analytics</span></div>
+      <table><thead><tr><th>Reference</th><th>Subject</th><th>State</th><th>Due</th><th>Action</th></tr></thead><tbody><tr><td><span class="mono">XP-060-2180</span></td><td>Branch performance pack</td><td><span class="chip info">In progress</span></td><td>Today 14:00</td><td><a href="sla-monitoring.html">Open</a></td></tr><tr><td><span class="mono">XP-060-2181</span></td><td>Amina Bello</td><td><span class="chip warning">Waiting</span></td><td>Tomorrow</td><td><a href="recovery-queue.html">Open</a></td></tr><tr><td><span class="mono">XP-060-2182</span></td><td>GoTech Operations</td><td><span class="chip critical">Blocked</span></td><td>Overdue</td><td><a href="case-queue.html">Open</a></td></tr><tr><td><span class="mono">XP-060-2183</span></td><td>Surulere Distributor</td><td><span class="chip success">Ready</span></td><td>This week</td><td><a href="sla-monitoring.html">Open</a></td></tr><tr><td><span class="mono">XP-060-2184</span></td><td>Northline Services</td><td><span class="chip info">In progress</span></td><td>This week</td><td><a href="recovery-queue.html">Open</a></td></tr></tbody></table>
+    </div>
+    <aside class="panel">
+      <div class="section-title"><h2>Operational Signals</h2><span class="chip success">Live</span></div>
+      <div class="timeline">
+    <div class="event"><strong>09:18</strong><span>Record opened and scoped to the signed-in profile.</span></div>
+    <div class="event"><strong>10:42</strong><span>Evidence, dependency, or consent posture refreshed.</span></div>
+    <div class="event"><strong>12:05</strong><span>Next action routed to the owning workspace.</span></div>
+  </div>
+    </aside>
+  </section>
+  <section class="panel">
+    <div class="section-title"><h2>Next Actions</h2><span class="chip success">Page-to-page</span></div>
+    <div class="toolbar"><a class="button primary" href="sla-monitoring.html">SLA and Breach Monitoring View</a><a class="button " href="recovery-queue.html">Recovery Action Queue</a><a class="button " href="case-queue.html">Case Queue</a><a class="button " href="workspace.html">Back to workspace</a></div>
+  </section>
+      <p class="footer-note">GoTech pilot tenant | Controlled demo environment | Static prototype only.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>
