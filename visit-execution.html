@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRD Visit Execution - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Login As</div>
+    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a class="active" href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
+    <div class="side-actions">
+      <a class="button " href="walkthrough.html">Solution walkthrough</a>
+      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="index.html">Switch role</a>
+    </div>
+    <div class="side-meta"><strong>Role scope</strong><br>Field Representative and Inspector<br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Field Ops / TRD Visit Execution</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div class="top-actions"><span class="chip info">Field Ops</span><span class="chip success">R1 controlled build</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>TRD Visit Execution</h1><p>Visit checklist, execution form, outlet context, evidence, location proof, submission, and confirmation.</p></div>
+        <div class="toolbar"><a class="button " href="role-field.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
+      </div>
+      
+    <section class="panel">
+      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-061 / SCR-062 / SCR-063</span></div>
+      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M41 Trade, Retail &amp; Distribution</td><td><a href="role-field.html">Field Representative and Inspector</a></td><td>Visit checklist, execution form, outlet context, evidence, location proof, submission, and confirmation.</td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
+      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-field.html">Field Ops</a></td><td>Primary actor with enabled workflow actions.</td></tr><tr><td><a href="role-sector.html">Sector Pack</a></td><td>Secondary or related actor with limited visibility or handoff context.</td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
+      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-061-A</td><td><span class="chip info">Open</span></td><td>Checklist must complete</td><td><a href="inspection-detail.html">Inspection and Assessment Detail</a></td></tr><tr><td>SCR-061-B</td><td><span class="chip warning">Blocked</span></td><td>Location/evidence proof is attached</td><td><a href="sectors-registry.html">Sector Pack Registry</a></td></tr><tr><td>SCR-061-C</td><td><span class="chip critical">Review</span></td><td>TRD overlay is sector-governed</td><td><a href="field-workorders.html">Work Order Queue</a></td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
+      <div class="rules"><div class="rule">Checklist must complete</div><div class="rule">Location/evidence proof is attached</div><div class="rule">TRD overlay is sector-governed</div></div>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
+      <div class="toolbar"><a class="button primary" href="inspection-detail.html">Inspection and Assessment Detail</a><a class="button primary" href="sectors-registry.html">Sector Pack Registry</a><a class="button primary" href="field-workorders.html">Work Order Queue</a><a class="button " href="role-field.html">Back to Field Ops</a></div>
+    </section>
+      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

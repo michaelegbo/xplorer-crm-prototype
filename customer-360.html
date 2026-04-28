@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer 360 - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Login As</div>
+    <nav class="role-nav" aria-label="Role navigation"><a class="active" href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
+    <div class="side-actions">
+      <a class="button " href="walkthrough.html">Solution walkthrough</a>
+      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="index.html">Switch role</a>
+    </div>
+    <div class="side-meta"><strong>Role scope</strong><br>Commercial and Onboarding Operator<br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Commercial &amp; Onboarding / Customer 360</div><div class="status"><span></span>Source-backed page flow</div></div>
+      <div class="top-actions"><span class="chip info">Commercial &amp; Onboarding</span><span class="chip success">R1 controlled build</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Customer 360</h1><p>Customer profile, relationship household, activity history, consent posture, open work, offers, and reveal path.</p></div>
+        <div class="toolbar"><a class="button " href="role-commercial.html">Role workspace</a><a class="button " href="index.html">Switch role</a></div>
+      </div>
+      
+    <section class="panel">
+      <div class="section-title"><h2>Source Trace</h2><span class="chip info">SCR-012 / SCR-013 / SCR-014 / SCR-016</span></div>
+      <table><thead><tr><th>Module</th><th>Primary role</th><th>Page purpose</th></tr></thead><tbody><tr><td>M01 Customer Core</td><td><a href="role-commercial.html">Commercial and Onboarding Operator</a></td><td>Customer profile, relationship household, activity history, consent posture, open work, offers, and reveal path.</td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Role Access</h2><span class="chip warning">Not shown to everyone</span></div>
+      <table><thead><tr><th>Role</th><th>What they can do here</th></tr></thead><tbody><tr><td><a href="role-commercial.html">Commercial &amp; Onboarding</a></td><td>Primary actor with enabled workflow actions.</td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Demo Workspace</h2><span class="chip success">Page flow</span></div>
+      <table><thead><tr><th>Record</th><th>State</th><th>Governed signal</th><th>Next page</th></tr></thead><tbody><tr><td>SCR-012-A</td><td><span class="chip info">Open</span></td><td>Relationship context is unified</td><td><a href="opportunity-detail.html">Opportunity Detail</a></td></tr><tr><td>SCR-012-B</td><td><span class="chip warning">Blocked</span></td><td>Reveal uses AccessDecisionTrace</td><td><a href="case-new.html">Case Creation Form</a></td></tr><tr><td>SCR-012-C</td><td><span class="chip critical">Review</span></td><td>AI suggestions are advisory only</td><td><a href="approval-detail.html">Approval Detail and Evidence Review</a></td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Functional Rules</h2><span class="chip info">From Stage 1</span></div>
+      <div class="rules"><div class="rule">Relationship context is unified</div><div class="rule">Reveal uses AccessDecisionTrace</div><div class="rule">AI suggestions are advisory only</div></div>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Continue Flow</h2><span class="chip success">Separate pages</span></div>
+      <div class="toolbar"><a class="button primary" href="opportunity-detail.html">Opportunity Detail</a><a class="button primary" href="case-new.html">Case Creation Form</a><a class="button primary" href="approval-detail.html">Approval Detail and Evidence Review</a><a class="button " href="role-commercial.html">Back to Commercial &amp; Onboarding</a></div>
+    </section>
+      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

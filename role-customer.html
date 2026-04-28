@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Portal User - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Login As</div>
+    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a class="active" href="role-customer.html">Customer Portal</a></nav>
+    <div class="side-actions">
+      <a class="button " href="walkthrough.html">Solution walkthrough</a>
+      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="index.html">Switch role</a>
+    </div>
+    <div class="side-meta"><strong>Role scope</strong><br>Customer Portal User<br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Customer Portal</div><div class="status"><span></span>Role-scoped workspace</div></div>
+      <div class="top-actions"><span class="chip info">Customer Portal</span><span class="chip success">R1 controlled build</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Customer Portal Workspace</h1><p>Views own-record status, submits requests, uploads documents, manages appointment-related tasks, sends secure messages, and reviews consent history.</p></div>
+        <div class="toolbar"><a class="button primary" href="walkthrough-customer.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+      </div>
+      
+      <section class="stats"><div class="stat"><span>Role persona</span><strong>Self-service customer</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="panel">
+        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
+        <div class="two-col">
+          <div><div class="rule good">See own case and request status</div><div class="rule good">Upload documents and submit requests</div><div class="rule good">Send secure messages and review consent</div></div>
+          <div><div class="rule bad">See internal queues</div><div class="rule bad">Access staff approval tools</div><div class="rule bad">See other customer or tenant data</div></div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
+        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-087 · M39 Self-Service Experience</span><h3>Customer Status Portal</h3><p>Customer-safe own-record status for cases, onboarding, service requests, appointments, and required actions.</p><a class="button primary" href="portal-status.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-088 · M39 Self-Service Experience</span><h3>Customer Request Submission</h3><p>Request form for complaint, service request, document update, or appointment-related customer action.</p><a class="button primary" href="portal-request.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-089 · M39 Self-Service Experience</span><h3>Portal Document Upload</h3><p>Customer document upload with file type rules, evidence metadata, status feedback, and remediation prompt.</p><a class="button primary" href="portal-upload.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-090 · M39 Self-Service Experience</span><h3>Secure Messaging Portal</h3><p>Secure customer messages linked to requests, cases, onboarding tasks, document evidence, and notification posture.</p><a class="button primary" href="portal-messages.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-098 · M12/M39 Consent &amp; Portal</span><h3>Customer Consent History</h3><p>Customer-visible consent history, purpose, channel, status, withdrawal path, and last update.</p><a class="button primary" href="portal-consent.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-051 · M35 Scheduling &amp; Appointment Engine</span><h3>Appointment Schedule</h3><p>Appointment list, slot state, customer task, staff capacity, portal booking, reschedule, and cancel context.</p><a class="button primary" href="field-schedule.html">Open page</a></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tenant and Platform Administrator - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Login As</div>
+    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a  href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a class="active" href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
+    <div class="side-actions">
+      <a class="button " href="walkthrough.html">Solution walkthrough</a>
+      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="index.html">Switch role</a>
+    </div>
+    <div class="side-meta"><strong>Role scope</strong><br>Tenant and Platform Administrator<br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Tenant Admin</div><div class="status"><span></span>Role-scoped workspace</div></div>
+      <div class="top-actions"><span class="chip info">Tenant Admin</span><span class="chip success">R1 controlled build</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Tenant Admin Workspace</h1><p>Manages tenant conformance, role bindings, endpoint bindings, integration recovery, sessions, activation readiness, and protected changes.</p></div>
+        <div class="toolbar"><a class="button primary" href="walkthrough-admin.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+      </div>
+      
+      <section class="stats"><div class="stat"><span>Role persona</span><strong>Tenant Admin</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="panel">
+        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
+        <div class="two-col">
+          <div><div class="rule good">Configure tenant-safe settings</div><div class="rule good">Recover integrations through governed replay</div><div class="rule good">Manage role and workspace bindings</div></div>
+          <div><div class="rule bad">Override shared security semantics</div><div class="rule bad">Activate incomplete tenant setups</div><div class="rule bad">Use break-glass without approval</div></div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
+        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-083 / SCR-084 / SCR-086 / SCR-110 / SCR-111 · M17 Tenant Conformance Runtime</span><h3>Tenant Conformance Workspace</h3><p>Tenant configuration, role mapping, endpoint binding, threshold wording, branding, diff impact, and protected change posture.</p><a class="button primary" href="tenant-conformance.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-093 / SCR-113 / SCR-114 · M17/M24 Tenant Runtime</span><h3>Tenant Activation and Post-Activation Watch</h3><p>Activation checklist, readiness gate, sponsor sign-off, connector readiness, activation decision, and watch window.</p><a class="button primary" href="tenant-activation.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-082 / SCR-085 / SCR-091 / SCR-092 / SCR-096 / SCR-099 · M17/M31 Access Control</span><h3>Role, Workspace, User and Session Administration</h3><p>Login, authentication challenge, timeout recovery, role/workspace binding, user administration, and device/session review.</p><a class="button primary" href="access-roles.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-004 / SCR-094 · M24 Integration Gateway</span><h3>Integration Health Dashboard</h3><p>Connector state, stale-source warning, affected workflows, degraded-mode banner, and recovery entry.</p><a class="button primary" href="integration-health.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-078 / SCR-112 · M24 Integration Gateway / M20 Runtime Binding</span><h3>Connector Contract Detail</h3><p>Connector endpoint, auth posture, callback verification, retry policy, tenant binding, and sandbox/production posture.</p><a class="button primary" href="connector-detail.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-081 · M24 Integration Gateway</span><h3>Replay and Reconciliation Log</h3><p>Replay queue, reconciliation events, idempotency keys, duplicate suppression, callback rejection, and recovery outcome.</p><a class="button primary" href="replay-log.html">Open page</a></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>

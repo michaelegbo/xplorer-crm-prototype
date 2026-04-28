@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Operator - Xplorer CRM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/xplorer-logo-white.png" alt="Xplorer"></a>
+    <div class="side-title">Login As</div>
+    <nav class="role-nav" aria-label="Role navigation"><a  href="role-commercial.html">Commercial &amp; Onboarding</a><a class="active" href="role-service.html">Service Agent</a><a  href="role-compliance.html">Compliance Reviewer</a><a  href="role-supervisor.html">Supervisor</a><a  href="role-admin.html">Tenant Admin</a><a  href="role-ai.html">AI Governance</a><a  href="role-marketing.html">Marketing</a><a  href="role-field.html">Field Ops</a><a  href="role-sector.html">Sector Pack</a><a  href="role-customer.html">Customer Portal</a></nav>
+    <div class="side-actions">
+      <a class="button " href="walkthrough.html">Solution walkthrough</a>
+      <a class="button " href="source-map.html">Source map</a>
+      <a class="button " href="index.html">Switch role</a>
+    </div>
+    <div class="side-meta"><strong>Role scope</strong><br>Service Operator<br>Tenant: GoTech pilot</div>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div><div class="crumb">Xplorer / Service Agent</div><div class="status"><span></span>Role-scoped workspace</div></div>
+      <div class="top-actions"><span class="chip info">Service Agent</span><span class="chip success">R1 controlled build</span></div>
+    </header>
+    <main class="page">
+      <div class="page-head">
+        <div><h1>Service Agent Workspace</h1><p>Handles complaints, interaction records, omnichannel inbox items, case queues, SLA risk, evidence, recovery tasks, and escalation requests.</p></div>
+        <div class="toolbar"><a class="button primary" href="walkthrough-service.html">Role walkthrough</a><a class="button " href="index.html">Switch role</a></div>
+      </div>
+      
+      <section class="stats"><div class="stat"><span>Role persona</span><strong>Service Agent</strong><em>from PRD and user-story actor model</em></div><div class="stat"><span>Visible workspaces</span><strong>6</strong><em>prototype entry points</em></div><div class="stat"><span>Decision posture</span><strong>Actor</strong><em>role-aware controls</em></div><div class="stat"><span>Tenant scope</span><strong>GoTech</strong><em>cross-tenant hidden</em></div></section>
+      <section class="panel">
+        <div class="section-title"><h2>What This User Can Do</h2><span class="chip success">Allowed</span></div>
+        <div class="two-col">
+          <div><div class="rule good">Create and update service cases</div><div class="rule good">Attach evidence and interaction history</div><div class="rule good">Escalate or request closure</div></div>
+          <div><div class="rule bad">Close maker-checker cases directly</div><div class="rule bad">Treat connector failure as success</div><div class="rule bad">Use customer data outside scope</div></div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="section-title"><h2>Role Workspaces</h2><span class="chip info">Separate pages</span></div>
+        <div class="cards"><div class="mini-card"><span class="eyebrow">SCR-007 / SCR-029 / SCR-072 / SCR-073 · M33 Omnichannel Contact Center &amp; Routing</span><h3>Omnichannel Contact Center</h3><p>Unified inbox, routing view, wallboard, active conversation, and handoff to case, lead, onboarding, or customer record.</p><a class="button primary" href="contact-center.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-020 / SCR-028 · M03 Service Engine</span><h3>Case Queue</h3><p>Queue-first service view with SLA, ownership, status, customer context, recovery state, and escalation risk.</p><a class="button primary" href="case-queue.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-021 · M03 Service Engine</span><h3>Case Creation Form</h3><p>Complaint or service request creation with customer context, case type, evidence, channel, and initial SLA posture.</p><a class="button primary" href="case-new.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-023 / SCR-024 / SCR-027 · M03 Service Engine</span><h3>Case Detail and Update</h3><p>Case detail, timeline, remediation, evidence, recovery workspace, tasks, customer messages, and next actions.</p><a class="button primary" href="case-detail.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-022 · M03/M24 Service Recovery and Integration Gateway</span><h3>Recovery Action Queue</h3><p>Recovery tasks created by failed connectors, stale checks, notification failures, or blocked downstream actions.</p><a class="button primary" href="recovery-queue.html">Open page</a></div><div class="mini-card"><span class="eyebrow">SCR-064 · M08 Knowledge &amp; Guidance</span><h3>Knowledge Base Browse</h3><p>Knowledge categories, article search, workflow relevance, publish state, and related procedure entry.</p><a class="button primary" href="knowledge-browse.html">Open page</a></div></div>
+      </section>
+    
+      <p class="footer-note">Static HTML prototype rebuilt from the Stage 1 deliverables. Buttons navigate to separate pages; no backend actions are executed.</p>
+    </main>
+  </section>
+</div>
+</body>
+</html>
